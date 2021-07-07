@@ -30,7 +30,7 @@
   <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/patient-header.php'; ?>
   <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/menu.php'; ?>
 
-  <?php } else { ?>
+<?php } elseif($section == 'recipes') { ?>
 
   <?php include $_SERVER["DOCUMENT_ROOT"].'/recipes/recipe-header.php'; ?>
 

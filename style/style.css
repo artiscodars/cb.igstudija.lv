@@ -10567,7 +10567,9 @@ nav ul li.no-data a > span span {
   margin: 0;
 }
 
-.header .patient-change button {
+.header .patient-change a {
+  display: block;
+  text-decoration: none;
   border-radius: 5px;
   background: #2E8DAC;
   color: #ffffff;

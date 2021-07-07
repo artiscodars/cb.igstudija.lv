@@ -119,7 +119,9 @@
     justify-content: flex-end;
     margin: 0;
 
-    button {
+    a {
+      display: block;
+      text-decoration: none;
       border-radius: 5px;
       background: $sea-80;
       color: $white;

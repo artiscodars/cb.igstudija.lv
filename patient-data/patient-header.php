@@ -28,7 +28,7 @@
   23.06.2021
 </div>
 <div class="patient-change">
-<button><i class="bi bi-arrow-left-right"></i> Pārslēgt personu</button>
+<a href="/"><i class="bi bi-arrow-left-right"></i> Pārslēgt personu</a>
 </div>
 
 </div>
