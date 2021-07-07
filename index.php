@@ -16,8 +16,8 @@ include 'includes/header.php'; ?>
           <form>
 
 <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Valsts</label>
-            <select class="form-select" aria-label="Default select example">
+    <label  class="form-label">Valsts</label>
+            <select class="form-select" aria-label="">
               <option selected>Izvēlies valsti</option>
               <option value="1">Latvija</option>
               <option value="2">Lietuva</option>
@@ -26,13 +26,13 @@ include 'includes/header.php'; ?>
 </div>
 
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Pacienta reģionālais/nacionālais veselības ID</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <label for="id" class="form-label">Pacienta reģionālais/nacionālais veselības ID</label>
+              <input type="text" class="form-control" id="id" aria-describedby="emailHelp">
 
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Trešā puse (neobligāti)</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="id2" class="form-label">Trešā puse (neobligāti)</label>
+              <input type="text" class="form-control" id="id2">
             </div>
 
 <div class="d-grid">
