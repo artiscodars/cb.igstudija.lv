@@ -1,1 +1,83 @@
 // main: style.scss
+
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    background: $sea-40;
+
+    li {
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      border-right: 1px solid $sea-60;
+
+      a {
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        text-decoration: none;
+        color: $grey-500;
+        border-bottom: 4px solid $sea-80;
+
+        > span {
+          span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: block;
+            width: auto;
+            font-size: 11px;
+            padding: 1px 5px;
+            background: $sea-80;
+            color: #fff;
+            font-weight: normal;
+          }
+        }
+
+        small {
+          display: block;
+          font-weight: normal;
+        }
+      }
+
+      &.main {
+        a {
+          font-weight: bold;
+          border-bottom: 4px solid $green;
+
+          > span {
+            span {
+              background: $green;
+            }
+          }
+        }
+      }
+
+      &.no-data {
+        * {
+          cursor: not-allowed;
+        }
+
+        a {
+          color: $grey-400;
+
+          > span {
+            span {
+              background: $grey-400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

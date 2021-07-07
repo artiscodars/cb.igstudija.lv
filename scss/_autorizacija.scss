@@ -1,1 +1,24 @@
 // main: style.scss
+
+.identifikācija {
+  margin-top: 10%;
+}
+
+.pacients {
+  margin-top: 20px;
+
+  li {
+    font-weight: bold;
+    padding-left: 180px;
+    position: relative;
+
+    label {
+      position: absolute;
+      left: 0;
+      font-weight: normal;
+      width: 180px;
+      padding-left: 15px;
+    }
+  }
+}
+//rekomendācijas

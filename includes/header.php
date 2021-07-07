@@ -16,22 +16,22 @@
 
 <body>
 
-<div class="subsystem-title">
-  <div class="title"><?php echo $subsystem_title; ?></div>
-  <a href="#" class="close"></a>
-</div>
+<div class="wrapper">
 
 
-<?php if ($section == 'patient-data') { ?>
-
-<?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/patient-header.php'; ?>
-<?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/menu.php'; ?>
-
-<?php } else { ?>
-
-<?php include $_SERVER["DOCUMENT_ROOT"].'/recipes/recipe-header.php'; ?>
-
-<?php } ?>
+  <div class="subsystem-title">
+    <div class="title"><?php echo $subsystem_title; ?></div>
+    <a href="#" class="close"><i class="bi bi-x-circle-fill"></i></a>
+  </div>
 
 
-<div class="content-holder">
+  <?php if ($section == 'patient-data') { ?>
+
+  <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/patient-header.php'; ?>
+  <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/menu.php'; ?>
+
+  <?php } else { ?>
+
+  <?php include $_SERVER["DOCUMENT_ROOT"].'/recipes/recipe-header.php'; ?>
+
+  <?php } ?>

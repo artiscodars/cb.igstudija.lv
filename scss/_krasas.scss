@@ -1,543 +1,93 @@
 // main: style.scss
+$grey-500: #333333;
+$grey-400: #9e9e9e;
+$grey-300: #cccccc;
+$grey-200: #f2f3f2;
+$grey-100: #f9f9f9;
+$grey: #eaeaea;
+$sea-100: #236576;
+$sea-80: #2E8DAC;
+$sea-60: #CEE4E8;
+$sea-40: #E7F2F4;
+$sea-20: #F5FAFA;
+$white: #ffffff;
+$black: #000000;
+$blue: #633774;
+$green: #91B719;
+$pink: #FF01C7;
+$red: #C70606;
+$orange: #FF8A00;
 
-//Palīgkrāsasa
-$peleks-500: #333333;
-$peleks-400: #9e9e9e;
-$peleks-300: #cccccc;
-$peleks-200: #f2f3f2;
-$peleks-100: #f9f9f9;
-$sudrabs: #828891;
-
-//Toņi
-
-//Violētie toņi
-$tonis: #804896; //pamata  krāsa
-$tonis-a: #542f62;
-$tonis-b: #633774;
-$tonis-c: #714085;
-$tonis-d: #8f50a7;
-$tonis-e: #9b5fb2;
-$tonis-f: #a570ba;
-$tonis-g: #b081c3;
-$tonis-h: #bb93cb;
-$tonis-i: #c6a4d3;
-$tonis-j: #d1b5db;
-$tonis-k: #dbc6e4;
-$tonis-l: #e6d7ec;
-$tonis-m: #f1e9f4;
-$tonis-n: #fcfafd;
-
-.tonis {
-    color: $tonis;
-}
-
-.border-tonis {
-    border-color: $tonis !important;
-}
-
-.tonis-bg {
-    background: $tonis !important;
-    color: #fff;
-}
-
-.tonis-a-bg {
-    background: $tonis-a !important;
-    color: #fff;
-}
-
-.tonis-b-bg {
-    background: $tonis-b !important;
-    color: #fff;
-}
-
-.tonis-c-bg {
-    background: $tonis-c !important;
-    color: #fff;
-}
-
-.tonis-d-bg {
-    background: $tonis-d !important;
-    color: #fff;
-}
-
-.tonis-e-bg {
-    background: $tonis-e !important;
-    color: #fff;
-}
-
-.tonis-f-bg {
-    background: $tonis-f !important;
-    color: #fff;
-}
-
-.tonis-g-bg {
-    background: $tonis-g !important;
-    color: #fff;
-}
-
-.tonis-h-bg {
-    background: $tonis-h !important;
-    color: #fff;
-}
-
-.tonis-i-bg {
-    background: $tonis-i !important;
-    color: #fff;
-}
-
-.tonis-j-bg {
-    background: $tonis-j !important;
-    color: #fff;
-}
-
-.tonis-k-bg {
-    background: $tonis-k !important;
-}
-
-.tonis-l-bg {
-    background: $tonis-l !important;
-}
-
-.tonis-m-bg {
-    background: $tonis-m !important;
-}
-
-.tonis-n-bg {
-    background: $tonis-n !important;
-}
-
-//Oranžie toņi
-$oranzs: #f99d35; //pamata  krāsa
-$oranzs-a: #784104;
-$oranzs-b: #914f04;
-$oranzs-c: #a95c05;
-$oranzs-d: #c26a06;
-$oranzs-e: #db7707;
-$oranzs-f: #f48507;
-$oranzs-g: #f8911c;
-$oranzs-h: #faa94e;
-$oranzs-i: #fab567;
-$oranzs-j: #fbc17f;
-$oranzs-k: #fccd98;
-$oranzs-l: #fdd9b1;
-$oranzs-m: #fde5ca;
-$oranzs-n: #fef1e2;
-
-.oranzs {
-    color: $oranzs;
-}
-
-.border-oranzs {
-    border-color: $oranzs !important;
-}
-
-.oranzs-bg {
-    background: $oranzs !important;
-    color: #fff;
-}
-
-.oranzs-a-bg {
-    background: $oranzs-a !important;
-    color: #fff;
-}
-
-.oranzs-b-bg {
-    background: $oranzs-b !important;
-    color: #fff;
-}
-
-.oranzs-c-bg {
-    background: $oranzs-c !important;
-    color: #fff;
-}
-
-.oranzs-d-bg {
-    background: $oranzs-d !important;
-    color: #fff;
-}
-
-.oranzs-e-bg {
-    background: $oranzs-e !important;
-    color: #fff;
-}
-
-.oranzs-f-bg {
-    background: $oranzs-f !important;
-    color: #fff;
-}
-
-.oranzs-g-bg {
-    background: $oranzs-g !important;
-    color: #fff;
-}
-
-.oranzs-h-bg {
-    background: $oranzs-h !important;
-    color: #fff;
-}
-
-.oranzs-i-bg {
-    background: $oranzs-i !important;
-    color: #fff;
-}
-
-.oranzs-j-bg {
-    background: $oranzs-j !important;
-    color: #fff;
-}
-
-.oranzs-k-bg {
-    background: $oranzs-k !important;
-}
-
-.oranzs-l-bg {
-    background: $oranzs-l !important;
-}
-
-.oranzs-m-bg {
-    background: $oranzs-m !important;
-}
-
-.oranzs-n-bg {
-    background: $oranzs-n !important;
-}
-
-//Tirkizie toņi
-$tirkizs: #00b5a5; //pamata  krāsa
-$tirkizs-a: #004f48;
-$tirkizs-b: #00685f;
-$tirkizs-c: #008277;
-$tirkizs-d: #009b8e;
-$tirkizs-e: #00cebc;
-$tirkizs-f: #00e8d3;
-$tirkizs-g: #02ffe9;
-$tirkizs-h: #1cffeb;
-$tirkizs-i: #35ffed;
-$tirkizs-j: #4fffef;
-$tirkizs-k: #68fff2;
-$tirkizs-l: #82fff4;
-$tirkizs-m: #9bfff6;
-$tirkizs-n: #b5fff8;
-
-.tirkizs {
-    color: $tirkizs;
-}
-
-.border-tirkizs {
-    border-color: $tirkizs !important;
-}
-
-.tirkizs-bg {
-    background: $tirkizs !important;
-    color: #fff;
-}
-
-.tirkizs-a-bg {
-    background: $tirkizs-a !important;
-    color: #fff;
-}
-
-.tirkizs-b-bg {
-    background: $tirkizs-b !important;
-    color: #fff;
-}
-
-.tirkizs-c-bg {
-    background: $tirkizs-c !important;
-    color: #fff;
-}
-
-.tirkizs-d-bg {
-    background: $tirkizs-d !important;
-    color: #fff;
+.sea-100 {
+  color: $sea-100;
 }
 
-.tirkizs-e-bg {
-    background: $tirkizs-e !important;
-    color: #fff;
+.sea-100-border {
+  border-color: $sea-100 !important;
 }
 
-.tirkizs-f-bg {
-    background: $tirkizs-f !important;
-    color: #fff;
+.sea-100-bg {
+  background: $sea-100 !important;
+  color: $white;
 }
 
-.tirkizs-g-bg {
-    background: $tirkizs-g !important;
-    color: #fff;
+.sea-80 {
+  color: $sea-80;
 }
 
-.tirkizs-h-bg {
-    background: $tirkizs-h !important;
-    color: #fff;
+.sea-80-border {
+  border-color: $sea-80 !important;
 }
 
-.tirkizs-i-bg {
-    background: $tirkizs-i !important;
-    color: #fff;
+.sea-80-bg {
+  background: $sea-80 !important;
+  color: $white;
 }
 
-.tirkizs-j-bg {
-    background: $tirkizs-j !important;
-    color: #fff;
+.sea-60 {
+  color: $sea-60;
 }
 
-.tirkizs-k-bg {
-    background: $tirkizs-k !important;
+.sea-60-border {
+  border-color: $sea-60 !important;
 }
 
-.tirkizs-l-bg {
-    background: $tirkizs-l !important;
+.sea-60-bg {
+  background: $sea-60 !important;
+  color: $black;
 }
 
-.tirkizs-m-bg {
-    background: $tirkizs-m !important;
+.sea-40 {
+  color: $sea-40;
 }
 
-.tirkizs-n-bg {
-    background: $tirkizs-n !important;
+.sea-40-border {
+  border-color: $sea-40 !important;
 }
 
-//Palīgkrāsasa
-.tonis-peleks-500-bg {
-    background: $peleks-500 !important;
-    color: #fff;
+.sea-40-bg {
+  background: $sea-40 !important;
+  color: $black;
 }
 
-.tonis-peleks-400-bg {
-    background: $peleks-400 !important;
-    color: #fff;
+.sea-20 {
+  color: $sea-20;
 }
 
-.tonis-peleks-300-bg {
-    background: $peleks-300 !important;
+.sea-20-border {
+  border-color: $sea-20 !important;
 }
 
-.tonis-peleks-200-bg {
-    background: $peleks-200 !important;
+.sea-20-bg {
+  background: $sea-20 !important;
+  color: $black;
 }
-
-.tonis-peleks-100-bg {
-    background: $peleks-100 !important;
-}
-
-//Sekundārās krāsas
-
-$sarkans: #f26c4d;
-$zals: #22a862;
-$roza: #f15a5d;
-$zils: #1825aa;
-$gaisi-peleks: #e6e7e8;
-$tumsi-peleks: #414042;
-
-.sarkans {
-    color: $sarkans;
-}
-
-.border-sarkans {
-    border-color: $sarkans !important;
-}
-
-.sarkans-bg {
-    background: $sarkans !important;
-    color: #fff;
-}
-
-.zals {
-    color: $zals;
-}
-.border-zals {
-    border-color: $zals !important;
-}
-
-.zals-bg {
-    background: $zals !important;
-    color: #fff;
-}
-.roza {
-    color: $roza;
-}
-.border-roza {
-    border-color: $roza !important;
-}
-.roza-bg {
-    background: $roza !important;
-    color: #fff;
-}
-
-.zils {
-    color: $zils;
-}
-.border-zils {
-    border-color: $zils !important;
-}
-.zils-bg {
-    background: $zils !important;
-    color: #fff;
-}
-
-.gaisi-peleks-bg {
-    background: $gaisi-peleks;
-}
-.border-gaisi-peleks {
-    border-color: $gaisi-peleks !important;
-}
-
-.tumsi-peleks {
-    color: $tumsi-peleks;
-}
-
-.tumsi-peleks-bg {
-    background: $tumsi-peleks !important;
-    color: #fff;
-}
-
-.border-tumsi-peleks {
-    border-color: $tumsi-peleks !important;
-}
-
-//Valodu mācību joma
-
-$valodu-a: #195480;
-$valodu-b: #1394d1;
-$valodu-c: #66bae9;
-
-.valodu-a-bg {
-    background: $valodu-a !important;
-    color: #fff;
-}
-
-.valodu-b-bg {
-    background: $valodu-b !important;
-    color: #fff;
-}
-
-.valodu-c-bg {
-    background: $valodu-c !important;
-    color: #fff;
-}
-
-//Sociālā un pilsoniskā mācību joma
-
-$sociala-a: #531d56;
-$sociala-b: #80337d;
-$sociala-c: #b266a9;
-
-.sociala-a-bg {
-    background: $sociala-a !important;
-    color: #fff;
-}
-
-.sociala-b-bg {
-    background: $sociala-b !important;
-    color: #fff;
-}
-
-.sociala-c-bg {
-    background: $sociala-c !important;
-    color: #fff;
-}
-
-//Dabaszinātņu mācību joma
-
-$dabaszinatnu-a: #dc3826;
-$dabaszinatnu-b: #f15a25;
-$dabaszinatnu-c: #f0834b;
-
-.dabaszinatnu-a-bg {
-    background: $dabaszinatnu-a !important;
-    color: #fff;
-}
-
-.dabaszinatnu-b-bg {
-    background: $dabaszinatnu-b !important;
-    color: #fff;
-}
-
-.dabaszinatnu-c-bg {
-    background: $dabaszinatnu-c !important;
-    color: #fff;
-}
-
-//Matemātikas mācību joma
-
-$matematikas-a: #087872;
-$matematikas-b: #059b8c;
-$matematikas-c: #6ec8bb;
-
-.matematikas-a-bg {
-    background: $matematikas-a !important;
-    color: #fff;
-}
-
-.matematikas-b-bg {
-    background: $matematikas-b !important;
-    color: #fff;
-}
-
-.matematikas-c-bg {
-    background: $matematikas-c !important;
-    color: #fff;
-}
-
-//Kultūras izpratnes un pašizpausmes māksla mācību joma
-
-$kulturas-a: #3d2460;
-$kulturas-b: #64388f;
-$kulturas-c: #9b7eba;
-
-.kulturas-a-bg {
-    background: $kulturas-a !important;
-    color: #fff;
-}
-
-.kulturas-b-bg {
-    background: $kulturas-b !important;
-    color: #fff;
-}
-
-.kulturas-c-bg {
-    background: $kulturas-c !important;
-    color: #fff;
-}
-
-//Tehnoloģiju mācību joma
-
-$tehnologiju-a: #ba2129;
-$tehnologiju-b: #e6454c;
-$tehnologiju-c: #f4827c;
-
-.tehnologiju-a-bg {
-    background: $tehnologiju-a !important;
-    color: #fff;
-}
-
-.tehnologiju-b-bg {
-    background: $tehnologiju-b !important;
-    color: #fff;
-}
-
-.tehnologiju-c-bg {
-    background: $tehnologiju-c !important;
-    color: #fff;
-}
-
-//Sports un veselība
-
-$sports-a: #66a961;
-
-.sports-a-bg {
-    background: $sports-a !important;
-    color: #fff;
-}
-
-$primary: $tonis !default;
-$secondary: $tumsi-peleks !default;
-$success: $zals;
-$danger: $sarkans;
-$warning: $oranzs;
-$info: $tirkizs;
-$light: $gaisi-peleks;
-$dark: $tumsi-peleks;
-
+$primary: $sea-100 !default;
+$secondary: $sea-80 !default;
+$success: $green;
+$danger: $red;
+$warning: $orange;
+$info: $blue;
+$light: $grey;
+$dark: $grey-500;
 $success-text: #fff;

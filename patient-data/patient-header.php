@@ -1,14 +1,34 @@
-<div class="patient-header">
+<div class="header">
 
-<div class="name"></div>
-<div class="gender"></div>
-<div class="birthdate"></div>
-<div class="age"></div>
-<div class="patient-id"></div>
-<div class="country"></div>
-<div class="blood-pressure"></div>
-<div class="pregnancy"></div>
-<div class="blood-type"></div>
-<div class="patient-change"></div>
+<div class="name"><h1>Ingrid Vasserman</h1></div>
+<div class="gender">
+  <div>
+  <img src="../images/female.svg"/>sieviete
+</div>
+</div>
+<div class="birthdate">12.03.1997</div>
+<div class="age"><span>24</span>gadi</div>
+<div class="patient-id">12365478965</div>
+<div class="country"><img src="../flags/de.png">Germany</div>
+<div class="blood-pressure">
+<div>
+<div class="data">
+  <div class="sys">128</div>
+  <div class="dia">83</div>
+</div>
+<div class="date"><span>12.03.2021</span></div>
+</div>
+</div>
+<div class="pregnancy">
+<img src="../images/pregnant.svg"/>
+23.06.2021
+</div>
+<div class="blood-type">
+  <img src="../images/blood.svg"/>
+  23.06.2021
+</div>
+<div class="patient-change">
+<button><i class="bi bi-arrow-left-right"></i> Pārslēgt personu</button>
+</div>
 
 </div>
