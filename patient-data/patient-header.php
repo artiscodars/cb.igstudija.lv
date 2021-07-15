@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header p-3">
 
 <div class="name"><h1>Ingrid Vasserman</h1></div>
 <div class="gender">

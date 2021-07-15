@@ -1,1 +1,46 @@
 // main: style.scss
+
+
+.card {
+  border:0;
+  border-radius: 0;
+}
+
+//Receptes dd
+
+.listitem {
+  text-decoration: none;
+&:hover {
+  .card {
+    background: $sea-20;
+
+  }
+}
+}
+
+.recipe-id {
+  padding: 1px 5px;
+  background: $sea-60;
+  margin-right: 20px;
+  color: #000;
+}
+.recipe-dates {
+  color: $sea-80;
+  i {
+    color: $sea-80;
+  }
+}
+
+h3 {
+
+font-size: 1.2rem;
+color: #000;
+
+  span {
+    font-weight: normal;
+  }
+}
+
+.recipe-prescribers {
+  color:#000;
+}

@@ -19,7 +19,7 @@
 <div class="wrapper">
 
 
-  <div class="subsystem-title">
+  <div class="subsystem-title ps-3">
     <div class="title"><?php echo $subsystem_title; ?></div>
     <a href="#" class="close"><i class="bi bi-x-circle-fill"></i></a>
   </div>
