@@ -12,11 +12,11 @@ $sea-40: #E7F2F4;
 $sea-20: #F5FAFA;
 $white: #ffffff;
 $black: #000000;
-$blue: #633774;
-$green: #91B719;
+//$blue: #2E8DAC;
+//$green: #91B719;
 $pink: #FF01C7;
-$red: #C70606;
-$orange: #FF8A00;
+//$red: #C70606;
+//$orange: #FF8A00;
 
 .sea-100 {
   color: $sea-100;
@@ -82,12 +82,30 @@ $orange: #FF8A00;
   background: $sea-20 !important;
   color: $black;
 }
-$primary: $sea-100 !default;
-$secondary: $sea-80 !default;
-$success: $green;
-$danger: $red;
-$warning: $orange;
-$info: $blue;
-$light: $grey;
-$dark: $grey-500;
-$success-text: #fff;
+
+//redef
+
+
+
+$primary: $sea-80;
+$secondary: $sea-60;
+$success: #91B719;
+$danger: #C70606;
+$warning: #FF8A00;
+//$info: $blue;
+//$light: $grey;
+//$dark: $grey-500;
+//$success-text: #fff;
+
+
+$theme-colors: (
+  primary: $primary,
+  secondary: $secondary,
+  success: $success,
+  //info: $info,
+  warning: $warning,
+  danger: $danger,
+  //light: $light,
+  //dark: $dark,
+  // add any additional color below
+);

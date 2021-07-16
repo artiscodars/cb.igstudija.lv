@@ -4,6 +4,7 @@ body {
   font-family: $font;
   background: $sea-60;
   height: 100%;
+  padding-top: 120px;
 
   .subsystem-title {
     background: $sea-100;
@@ -11,6 +12,11 @@ body {
     line-height: 40px;
     height: 40px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
 
     .title {
       float: left;
@@ -55,4 +61,11 @@ body {
     margin-top: -40px;
     height: 40px;
   }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  
 }

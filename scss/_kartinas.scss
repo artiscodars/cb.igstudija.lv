@@ -4,9 +4,15 @@
 .card {
   border:0;
   border-radius: 0;
+
+  &.light {
+    background: $sea-20;
+  }
+
+
 }
 
-//Receptes dd
+//Recipes list
 
 .listitem {
   text-decoration: none;
@@ -43,4 +49,39 @@ color: #000;
 
 .recipe-prescribers {
   color:#000;
+}
+
+
+//Recipe data
+
+.content {
+  h4 {
+    font-weight: normal;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+.card {
+  margin-bottom: 1rem;
+
+  &.recipe {
+    border-top:10px solid #73CCEA;
+  }
+
+.card-row {
+  margin-bottom: 1rem;
+
+&:last-child {
+  margin-bottom: 0;
+}
+
+  label {
+    font-size: 0.9rem;
+    color:$grey-400;
+  }
+}
+
+
+}
+
 }

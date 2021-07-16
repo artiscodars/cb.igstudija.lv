@@ -15,7 +15,7 @@
 
 
         <div class="patient-change">
-          <a href="/"><i class="bi bi-arrow-left-right"></i> Pārslēgt personu</a>
+          <a href="/" class="btn btn-primary"><i class="fas fa-exchange-alt"></i> Pārslēgt personu</a>
         </div>
 
 
