@@ -10,7 +10,7 @@ include 'includes/header.php'; ?>
 
 
 
-        <div class="card identifikācija">
+        <div class="card identification">
           <div class="card-body">
 
             <form>

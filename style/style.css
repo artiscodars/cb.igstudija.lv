@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 .sea-100 {
@@ -10092,7 +10091,7 @@ nav ul li.no-data a > span span {
   background: #9e9e9e;
 }
 
-.identifikācija {
+.identification {
   margin-top: 10%;
 }
 
