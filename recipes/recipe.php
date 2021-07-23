@@ -87,7 +87,7 @@ include '../includes/header.php'; ?>
               <div class="card-row">
                 <label>Aktīvā viela</label>
                 <div class="card-data">
-                  C10BX11 atorvastatin, amlodipine and perindopril
+                  C10BX11 atorvastatin, amlodipine
                 </div>
               </div>
 
