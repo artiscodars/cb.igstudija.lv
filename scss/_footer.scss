@@ -1,0 +1,43 @@
+// main: style.scss
+
+footer {
+  background: $white;
+  margin-top: -40px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 15px;
+
+  div {
+    margin-right:25px;
+    float: left;
+  }
+
+
+.date-start {
+  i {
+    color:$sea-80;
+  }
+}
+
+.date-update {
+  font-weight: bold;
+  i {
+    color:$green;
+  } 
+}
+
+.data-update-person {
+
+}
+
+
+.data-legal-person {
+
+}
+
+.system-version {
+  float: right;
+  margin-right:15px;
+}
+
+}

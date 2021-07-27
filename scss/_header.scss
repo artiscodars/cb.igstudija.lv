@@ -22,13 +22,13 @@
   .name {
     h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 1.5rem;
     }
   }
 
   .gender {
     text-align: center;
-    font-size: 12px;
+    font-size: 0.8rem;
 
     img {
       display: block;
@@ -78,7 +78,7 @@
         &::before {
           content: "SYS";
           margin-right: 5px;
-          font-size: 12px;
+          font-size: 0.8rem;
           color: $grey-500;
         }
       }
@@ -88,7 +88,7 @@
 
         &::before {
           content: "DIA";
-          font-size: 12px;
+          font-size: 0.8rem;
           margin-right: 5px;
           color: $grey-500;
         }
@@ -124,7 +124,7 @@
     justify-content: flex-end;
     margin: 0;
 
-  
+
   }
 
   &.patient-header {}

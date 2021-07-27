@@ -1,7 +1,26 @@
 </div>
 
 <footer>
-<?php include $_SERVER["DOCUMENT_ROOT"].'/includes/patient-data-footer.php'; ?>
+
+
+  <?php if ($section == 'patient-data') { ?>
+
+  <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/patient-footer.php'; ?>
+
+
+  <?php } elseif($section == 'recipes') { ?>
+
+  <?php include $_SERVER["DOCUMENT_ROOT"].'/recipes/recipe-footer.php'; ?>
+
+<?php } else { ?>
+
+    <?php include $_SERVER["DOCUMENT_ROOT"].'/includes/auth-footer.php'; ?>
+
+<?php } ?>
+
+
+
+
 </footer>
 
 </body>
