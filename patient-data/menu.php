@@ -2,11 +2,11 @@
     <ul class="menu" id="menu">
 
       <li class="home">
-        <a href=""><span><i class="bi bi-house-door-fill"></i></span></a>
+        <a href="/patient-data/"><span><i class="bi bi-house-door-fill"></i></span></a>
       </li>
 
-        <li class="main">
-          <a href=""><span>Alerģijas un nepanesamības<span>1</span></span></a>
+        <li class="main <?php echo $state; ?>">
+          <a href="page.php"><span>Alerģijas un nepanesamības<span>1</span></span></a>
         </li>
         <li class="main">
           <a href=""><span>Problēmas un diagnozes<span>2</span></span></a>

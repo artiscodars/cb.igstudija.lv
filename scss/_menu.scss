@@ -78,6 +78,23 @@ nav {
           }
         }
       }
+
+&.active {
+  a {
+    background: $sea-80;
+    color:#fff;
+
+    > span {
+      span {
+        background: $sea-100;
+      }
+    }
+
+  }
+}
+
+
+
     }
   }
 }

@@ -21,15 +21,41 @@ include '../includes/header.php'; ?>
 
 <div class="col">
 
-  <?php include 'section.php'; ?>
+  <div class="section">
+  <h4>Alerģijas un nepanesamības <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
+  <?php include 'card-data.php';  ?>
 
-    <?php include 'section-empty.php'; ?>
+  </div>
 
-      <?php include 'section-no-data.php'; ?>
+  <div class="section">
+  <h4>Medicīniskās ierīces <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
+  <?php include 'card-empty.php';  ?>
+  </div>
+
+  <div class="section">
+  <h4>Lietojamās zāles <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
+  <?php include 'card-data.php';  ?>
+    <?php include 'card-data.php';  ?>
+
+  </div>
+
 
 
 </div>
 <div class="col">
+
+  <div class="section">
+  <h4>Problēmas un diagnozes <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
+  <?php include 'card-data.php';  ?>
+    <?php include 'card-data.php';  ?>
+
+  </div>
+
+  <div class="section">
+  <h4>Nozīmīgākās ķirurģiskās procedūras pēdējo 6 mēn. laikā <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
+  <?php include 'card-no-data.php';  ?>
+  </div>
+
 
 </div>
 
