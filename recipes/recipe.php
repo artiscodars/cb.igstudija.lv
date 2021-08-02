@@ -319,7 +319,23 @@ include '../includes/header.php'; ?>
     <div class="col p-3">
       <div class="sidebar">
         <h2>Izniegšana</h2>
-        <?php include 'dispencing-form.php'; ?>
+
+<?php
+
+$p = $_GET['p'];
+
+
+if ($p  == 'validate'){
+  include 'dispensing-validation.php';
+} elseif ($p == 'confirmed') {
+  include 'dispensing-confirmed.php';
+} else {
+  include 'dispensing-form.php';
+}
+?>
+
+
+
       </div>
     </div>
 

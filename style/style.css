@@ -10048,6 +10048,42 @@ body h2, body .h2 {
   font-weight: bold;
 }
 
+body .validation {
+  padding: 50px;
+  text-align: center;
+}
+
+body .validation > div {
+  margin-top: 30px;
+}
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+body .validation i {
+  color: #2E8DAC;
+  font-size: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
 nav ul {
   list-style: none;
   margin: 0;
@@ -10193,6 +10229,16 @@ nav ul li.active a > span span {
   text-align: center;
   border: 2px dashed #fd7e14;
   color: #fd7e14;
+}
+
+.card .form-data {
+  font-weight: bold;
+}
+
+.card .form-data label {
+  display: block;
+  margin-top: 15px;
+  font-weight: normal;
 }
 
 .listitem {
@@ -10494,11 +10540,11 @@ footer .system-version {
   margin: unset;
 }
 
-.btn-primary {
+.btn-primary, .btn-success {
   color: #fff;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-success:hover {
   color: #fff;
 }
 

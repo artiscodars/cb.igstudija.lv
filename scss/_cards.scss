@@ -53,6 +53,15 @@
     color: $orange;
   }
 
+  .form-data {
+    font-weight: bold;
+    label {
+      display: block;
+      margin-top:15px; 
+      font-weight: normal;
+    }
+  }
+
 
 }
 
