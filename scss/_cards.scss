@@ -57,7 +57,7 @@
     font-weight: bold;
     label {
       display: block;
-      margin-top:15px; 
+      margin-top:15px;
       font-weight: normal;
     }
   }
@@ -84,7 +84,7 @@
   color: #000;
 }
 .recipe-dates {
-  color: $sea-80;
+  color:#000;
   i {
     color: $sea-80;
   }
@@ -160,7 +160,7 @@ color: #000;
     }
 
     .date {
-      color: $sea-80;
+      color: #000;
         display: inline-block;
         padding: 0 5px;
         margin-right: 10px

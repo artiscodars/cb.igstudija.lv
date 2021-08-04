@@ -10257,7 +10257,7 @@ nav ul li.active a > span span {
 }
 
 .recipe-dates {
-  color: #2E8DAC;
+  color: #000;
 }
 
 .recipe-dates i {
@@ -10326,7 +10326,7 @@ h3 span, .h3 span {
 }
 
 .card-url .card .date {
-  color: #2E8DAC;
+  color: #000;
   display: inline-block;
   padding: 0 5px;
   margin-right: 10px;
@@ -10534,6 +10534,40 @@ footer .system-version {
   line-height: 30px;
   text-align: center;
   display: block;
+}
+
+table.table-cb {
+  background: #fff;
+}
+
+table.table-cb thead {
+  border-bottom: 1px solid #CEE4E8;
+  background: #E7F2F4;
+}
+
+table.table-cb thead th {
+  border: 0;
+  padding: 15px;
+}
+
+table.table-cb td {
+  padding: 15px;
+}
+
+table.table-cb td.kods span {
+  background: #CEE4E8;
+  display: inline-block;
+  padding: 0 5px;
+  margin-right: 10px;
+  color: #000;
+}
+
+table.table-cb tbody tr:hover {
+  --bs-table-accent-bg:none;
+}
+
+table.table-cb tbody tr:hover td {
+  background: #F5FAFA;
 }
 
 .container {

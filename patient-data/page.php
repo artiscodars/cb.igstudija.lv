@@ -7,7 +7,7 @@ include '../includes/header.php'; ?>
 
       <div class="row g-0">
 
-        <div class="col-md-9 p-3">
+        <div class="col-lg-9 p-3">
 
 
           <div class="alert alert-danger" role="alert">
@@ -22,7 +22,62 @@ include '../includes/header.php'; ?>
 
 <div class="col">
 
-  <?php include 'card-data.php'; ?>
+  <?php// include 'card-data.php'; ?>
+
+
+
+  <table class="table table-hover table-cb">
+    <thead>
+      <tr>
+
+        <th scope="col">Kods</th>
+        <th scope="col">Nosaukums</th>
+        <th scope="col">Datums</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums nedaudz garāks nekāM</a></td>
+        <td>06.05.2021</td>
+      </tr>
+      <tr>
+
+      <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums</a> </td>
+        <td>06.05.2021</td>
+      </tr>
+      <tr>
+
+        <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums mazliet vēl</a></td>
+        <td>06.05.2021</td>
+      </tr>
+      <tr>
+
+        <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums nedaudz garāks nekāM</a></td>
+        <td>06.05.2021</td>
+      </tr>
+      <tr>
+
+      <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums</a> </td>
+        <td>06.05.2021</td>
+      </tr>
+      <tr>
+
+        <td class="kods"><span>LK785</span></td>
+        <td><a href="#">Kaut kāds nosaukums mazliet vēl</a></td>
+        <td>06.05.2021</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+
 
 
 
@@ -38,7 +93,7 @@ include '../includes/header.php'; ?>
 
 
 
-        <div class="col p-3">
+        <div class="col-lg-3 p-3">
           <div class="sidebar">
 
           <?php include '../includes/contactinfo.php'; ?>
