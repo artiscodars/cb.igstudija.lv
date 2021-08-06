@@ -42,7 +42,7 @@ include '../includes/header.php'; ?>
       <tr>
         <td class="kods"><span>4675</span></td>
         <td><a href="#">Pārtikas alerģija</a></td>
-        <td>A73</td>
+        <td class="kods"><span>A73</span></td>
         <td>Kivi</td>
         <td><a class="more" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">Parādīt</a></td>
       </tr>
@@ -55,7 +55,7 @@ include '../includes/header.php'; ?>
       <tr>
         <td class="kods"><span>3333</span></td>
         <td><a href="#">Medikamentu alerģija</a></td>
-        <td>B13</td>
+        <td class="kods"><span>B13</span></td>
         <td>Paracetamols</td>
         <td><a class="more" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">Parādīt</a></td>
       </tr>
