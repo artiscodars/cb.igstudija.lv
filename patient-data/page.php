@@ -44,7 +44,7 @@ include '../includes/header.php'; ?>
         <td><a href="#">Pārtikas alerģija</a></td>
         <td class="kods"><span>A73</span></td>
         <td>Kivi</td>
-        <td><a class="more" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">Parādīt</a></td>
+        <td><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">Parādīt <i class="far fa-caret-square-down"></i></a></td>
       </tr>
       <tr class="collapse" id="link_1">
       <td colspan="5" class="nested"><?php include 'nested-table.php'; ?></td>
@@ -57,7 +57,7 @@ include '../includes/header.php'; ?>
         <td><a href="#">Medikamentu alerģija</a></td>
         <td class="kods"><span>B13</span></td>
         <td>Paracetamols</td>
-        <td><a class="more" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">Parādīt</a></td>
+        <td><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">Parādīt <i class="far fa-caret-square-down"></i></a></td>
       </tr>
       <tr class="collapse" id="link_2">
       <td colspan="5" class="nested"><?php include 'nested-table.php'; ?></td>

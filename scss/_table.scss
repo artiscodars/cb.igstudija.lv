@@ -2,6 +2,7 @@
 
 table.table-cb {
   background: #fff;
+  font-size: 0.9rem;
   thead {
     border-bottom:1px solid $sea-60;
     background: $sea-40;
@@ -12,15 +13,17 @@ table.table-cb {
   }
 
   td {
-    padding: 15px;
+    padding: 10px 15px;
+    line-height: 28px;
 
     &.kods {
+
       span {
         background: $sea-60;
-        display: inline-block;
         padding: 0 5px;
         margin-right: 10px;
         color: #000;
+        font-size: 0.9rem;
       }
     }
 
@@ -43,10 +46,22 @@ tbody {
     background: inherit;
   }
 
+.title {
+  font-weight: bold;
+
+}
 
 .table-nested {
+  margin-top: 10px;
   background: #fff;
   border:1px solid $sea-60;
+  font-size: 0.9rem;
+
+  button {
+    i {
+      margin-left: 5px;
+    }
+  }
 }
 
 

@@ -10538,6 +10538,7 @@ footer .system-version {
 
 table.table-cb {
   background: #fff;
+  font-size: 0.9rem;
 }
 
 table.table-cb thead {
@@ -10551,15 +10552,16 @@ table.table-cb thead th {
 }
 
 table.table-cb td {
-  padding: 15px;
+  padding: 10px 15px;
+  line-height: 28px;
 }
 
 table.table-cb td.kods span {
   background: #CEE4E8;
-  display: inline-block;
   padding: 0 5px;
   margin-right: 10px;
   color: #000;
+  font-size: 0.9rem;
 }
 
 table.table-cb tbody tr:hover {
@@ -10578,9 +10580,19 @@ table.table-cb .nested:hover {
   background: inherit;
 }
 
+table.table-cb .nested .title {
+  font-weight: bold;
+}
+
 table.table-cb .nested .table-nested {
+  margin-top: 10px;
   background: #fff;
   border: 1px solid #CEE4E8;
+  font-size: 0.9rem;
+}
+
+table.table-cb .nested .table-nested button i {
+  margin-left: 5px;
 }
 
 .container {

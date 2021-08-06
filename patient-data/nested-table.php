@@ -1,3 +1,4 @@
+<div class="title">Reakcijas ko izraisa alergēns</div>
 <table class="table table-hover table-nested">
   <thead>
     <tr>
