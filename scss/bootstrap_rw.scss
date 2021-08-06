@@ -6,7 +6,7 @@
 
 .btn-primary, .btn-success {
   color:#fff;
-  &:hover {
+  &:hover, &:active, &:visited, &:focus {
     color:#fff;
   }
 }

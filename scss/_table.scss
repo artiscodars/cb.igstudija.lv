@@ -15,7 +15,8 @@ table.table-cb {
   td {
     padding: 10px 15px;
     line-height: 28px;
-
+  font-size: 0.9rem;
+  
     &.kods {
 
       span {
@@ -49,6 +50,15 @@ table.table-cb {
 
     i {
       transform: rotate(180deg);
+    }
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      line-height:20px;
+        font-size: 0.8rem
     }
   }
 

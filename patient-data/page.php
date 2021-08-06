@@ -41,7 +41,7 @@ include '../includes/header.php'; ?>
       <!--- row --->
       <tr>
         <td class="kods"><span>4675</span></td>
-        <td><a href="#">Pārtikas alerģija</a></td>
+        <td><b>Pārtikas alerģija</b></td>
         <td class="kods"><span>A73</span></td>
         <td>Kivi</td>
         <td><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">
@@ -56,7 +56,7 @@ include '../includes/header.php'; ?>
       <!--- row --->
       <tr>
         <td class="kods"><span>3333</span></td>
-        <td><a href="#">Medikamentu alerģija</a></td>
+        <td><b>Medikamentu alerģija</b></td>
         <td class="kods"><span>B13</span></td>
         <td>Paracetamols</td>
         <td><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">
@@ -66,6 +66,25 @@ include '../includes/header.php'; ?>
       <tr class="collapse" id="link_2">
       <td colspan="5" class="nested"><?php include 'nested-table.php'; ?></td>
       </tr>
+      <!--- row END -->
+
+
+      <!--- row --->
+      <tr>
+        <td class="kods"><span>3333</span></td>
+        <td>
+        <b>Triveram 40 mg/10 mg/10 mg film-coated tablets</b>
+        <ul>
+          <li>Amlodipinum 10 mg</li>
+          <li>Atorvastatinum 40 mg</li>
+          <li>Perindoprili argininum 10 mg</li>
+        </ul>
+        </td>
+        <td class="kods"><span>B13</span></td>
+        <td>Paracetamols</td>
+        <td></td>
+      </tr>
+
       <!--- row END -->
 
 

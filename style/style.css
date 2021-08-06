@@ -10554,6 +10554,7 @@ table.table-cb thead th {
 table.table-cb td {
   padding: 10px 15px;
   line-height: 28px;
+  font-size: 0.9rem;
 }
 
 table.table-cb td.kods span {
@@ -10582,6 +10583,15 @@ table.table-cb td .btn[aria-expanded="true"] .close {
 
 table.table-cb td .btn[aria-expanded="true"] i {
   transform: rotate(180deg);
+}
+
+table.table-cb td ul {
+  margin: 0;
+}
+
+table.table-cb td ul li {
+  line-height: 20px;
+  font-size: 0.8rem;
 }
 
 table.table-cb tbody tr:hover {
@@ -10619,7 +10629,7 @@ table.table-cb .nested .table-nested {
   color: #fff;
 }
 
-.btn-primary:hover, .btn-success:hover {
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus, .btn-success:hover, .btn-success:active, .btn-success:visited, .btn-success:focus {
   color: #fff;
 }
 
