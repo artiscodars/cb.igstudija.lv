@@ -10564,6 +10564,26 @@ table.table-cb td.kods span {
   font-size: 0.9rem;
 }
 
+table.table-cb td .btn i {
+  margin-left: 5px;
+}
+
+table.table-cb td .btn .close {
+  display: none;
+}
+
+table.table-cb td .btn[aria-expanded="true"] .open {
+  display: none;
+}
+
+table.table-cb td .btn[aria-expanded="true"] .close {
+  display: inline;
+}
+
+table.table-cb td .btn[aria-expanded="true"] i {
+  transform: rotate(180deg);
+}
+
 table.table-cb tbody tr:hover {
   --bs-table-accent-bg:none;
 }
@@ -10589,10 +10609,6 @@ table.table-cb .nested .table-nested {
   background: #fff;
   border: 1px solid #CEE4E8;
   font-size: 0.9rem;
-}
-
-table.table-cb .nested .table-nested button i {
-  margin-left: 5px;
 }
 
 .container {

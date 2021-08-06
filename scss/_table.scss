@@ -27,6 +27,31 @@ table.table-cb {
       }
     }
 
+    .btn {
+      i {
+        margin-left: 5px;
+      }
+
+      .close {
+        display: none;
+      }
+    }
+
+  .btn[aria-expanded="true"] {
+
+.open {
+  display: none;
+}
+
+.close {
+  display: inline;
+}
+
+    i {
+      transform: rotate(180deg);
+    }
+  }
+
 
   }
 
@@ -57,11 +82,9 @@ tbody {
   border:1px solid $sea-60;
   font-size: 0.9rem;
 
-  button {
-    i {
-      margin-left: 5px;
-    }
-  }
+
+
+
 }
 
 
