@@ -37,5 +37,21 @@ tbody {
   }
 }
 
+.nested {
+  background: #fff;
+  &:hover {
+    background: inherit;
+  }
+
+
+.table-nested {
+  background: #fff;
+  border:1px solid $sea-60;
+}
+
+
+
+}
+
 
 }

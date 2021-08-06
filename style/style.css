@@ -10570,6 +10570,19 @@ table.table-cb tbody tr:hover td {
   background: #F5FAFA;
 }
 
+table.table-cb .nested {
+  background: #fff;
+}
+
+table.table-cb .nested:hover {
+  background: inherit;
+}
+
+table.table-cb .nested .table-nested {
+  background: #fff;
+  border: 1px solid #CEE4E8;
+}
+
 .container {
   margin: unset;
 }

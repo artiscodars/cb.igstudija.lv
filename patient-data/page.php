@@ -30,47 +30,42 @@ include '../includes/header.php'; ?>
     <thead>
       <tr>
 
-        <th scope="col">Kods</th>
+        <th scope="col">Alerģijas tipa kods</th>
         <th scope="col">Nosaukums</th>
-        <th scope="col">Datums</th>
+        <th scope="col">Alergēna kods</th>
+        <th scope="col">Alergēna nosaukums</th>
+        <th scope="col">Reakcijas</th>
       </tr>
     </thead>
     <tbody>
+      <!--- row --->
       <tr>
-        <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums nedaudz garāks nekāM</a></td>
-        <td>06.05.2021</td>
+        <td class="kods"><span>4675</span></td>
+        <td><a href="#">Pārtikas alerģija</a></td>
+        <td>A73</td>
+        <td>Kivi</td>
+        <td><a class="more" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">Parādīt</a></td>
       </tr>
-      <tr>
+      <tr class="collapse" id="link_1">
+      <td colspan="5" class="nested"><?php include 'nested-table.php'; ?></td>
+      </tr>
+      <!--- row END -->
 
-      <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums</a> </td>
-        <td>06.05.2021</td>
-      </tr>
+      <!--- row --->
       <tr>
-
-        <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums mazliet vēl</a></td>
-        <td>06.05.2021</td>
+        <td class="kods"><span>3333</span></td>
+        <td><a href="#">Medikamentu alerģija</a></td>
+        <td>B13</td>
+        <td>Paracetamols</td>
+        <td><a class="more" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">Parādīt</a></td>
       </tr>
-      <tr>
-
-        <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums nedaudz garāks nekāM</a></td>
-        <td>06.05.2021</td>
+      <tr class="collapse" id="link_2">
+      <td colspan="5" class="nested"><?php include 'nested-table.php'; ?></td>
       </tr>
-      <tr>
+      <!--- row END -->
 
-      <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums</a> </td>
-        <td>06.05.2021</td>
-      </tr>
-      <tr>
 
-        <td class="kods"><span>LK785</span></td>
-        <td><a href="#">Kaut kāds nosaukums mazliet vēl</a></td>
-        <td>06.05.2021</td>
-      </tr>
+
     </tbody>
   </table>
 
