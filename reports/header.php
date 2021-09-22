@@ -26,22 +26,20 @@
 
 
   <div class="subsystem-title ps-3">
-    <div class="title"><?php echo $subsystem_title; ?></div>
+    <div class="title">Atskaites</div>
     <a href="#" class="close"><i class="bi bi-x-circle-fill"></i></a>
   </div>
 
 
-  <?php if ($section == 'patient-data') { ?>
 
-  <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/patient-header.php'; ?>
-  <?php include $_SERVER["DOCUMENT_ROOT"].'/patient-data/menu.php'; ?>
+<?php if($section == 'list') { ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'/reports/list-header.php'; ?>
+<?php } ?>
 
-<?php } elseif($section == 'recipes') { ?>
+<?php if($section == 'edit') { ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'/reports/edit-header.php'; ?>
+<?php } ?>
 
-  <?php include $_SERVER["DOCUMENT_ROOT"].'/recipes/recipe-header.php'; ?>
-
-<?php } elseif($section == 'reports') { ?>
-
-    <?php include $_SERVER["DOCUMENT_ROOT"].'/reports/reports-header.php'; ?>
-
-    <?php } ?>
+<?php if($section == 'view') { ?>
+<?php include $_SERVER["DOCUMENT_ROOT"].'/reports/view-header.php'; ?>
+<?php } ?>

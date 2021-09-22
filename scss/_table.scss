@@ -3,11 +3,13 @@
 table.table-cb {
   background: #fff;
   font-size: 0.9rem;
+
   thead {
-    border-bottom:1px solid $sea-60;
+    border-bottom: 1px solid $sea-60;
     background: $sea-40;
+
     th {
-      border:0;
+      border: 0;
       padding: 15px;
     }
   }
@@ -15,10 +17,10 @@ table.table-cb {
   td {
     padding: 10px 15px;
     line-height: 28px;
-  font-size: 0.9rem;
-  
-    &.kods {
+    font-size: 0.9rem;
+    vertical-align: middle;
 
+    &.kods {
       span {
         background: $sea-60;
         padding: 0 5px;
@@ -38,68 +40,56 @@ table.table-cb {
       }
     }
 
-  .btn[aria-expanded="true"] {
+    .btn[aria-expanded="true"] {
+      .open {
+        display: none;
+      }
 
-.open {
-  display: none;
-}
+      .close {
+        display: inline;
+      }
 
-.close {
-  display: inline;
-}
+      i {
+        transform: rotate(180deg);
+      }
+    }
 
-    i {
-      transform: rotate(180deg);
+    ul {
+      margin: 0;
+
+      li {
+        line-height: 20px;
+        font-size: 0.8rem;
+      }
     }
   }
 
-  ul {
-    margin: 0;
+  tbody {
+    tr:hover {
+      --bs-table-accent-bg: none;
 
-    li {
-      line-height:20px;
-        font-size: 0.8rem
+      td {
+        background: $sea-20;
+      }
     }
   }
 
+  .nested {
+    background: #fff;
 
-  }
-
-tbody {
-  tr:hover {
-    --bs-table-accent-bg:none;
-    td {
-       background: $sea-20;
+    &:hover {
+      background: inherit;
     }
 
+    .title {
+      font-weight: bold;
+    }
+
+    .table-nested {
+      margin-top: 10px;
+      background: #fff;
+      border: 1px solid $sea-60;
+      font-size: 0.9rem;
+    }
   }
-}
-
-.nested {
-  background: #fff;
-  &:hover {
-    background: inherit;
-  }
-
-.title {
-  font-weight: bold;
-
-}
-
-.table-nested {
-  margin-top: 10px;
-  background: #fff;
-  border:1px solid $sea-60;
-  font-size: 0.9rem;
-
-
-
-
-}
-
-
-
-}
-
-
 }

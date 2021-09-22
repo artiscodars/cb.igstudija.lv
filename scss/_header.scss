@@ -14,7 +14,7 @@
 
   > div {
     align-items: center;
-    display: flex;
+    //display: flex;
     justify-content: center;
     margin-right: 25px;
   }
@@ -81,13 +81,13 @@
           margin-right: 5px;
           font-size: 0.8rem;
           color: $grey-500;
-            font-weight: normal;
+          font-weight: normal;
         }
       }
 
       .dia {
         padding: 0 5px;
-          font-weight: bold;
+        font-weight: bold;
 
         &::before {
           content: "DIA";
@@ -127,8 +127,6 @@
     text-align: right;
     justify-content: flex-end;
     margin: 0;
-
-
   }
 
   &.patient-header {}
