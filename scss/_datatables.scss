@@ -31,3 +31,11 @@ table.dataTable > thead .sorting_desc_disabled:before {
     line-height: 1.5;
   }
 }
+
+.saved-reports {
+  .dataTables_wrapper {
+    > .row:first-child {
+      display: block;
+    }
+  }
+}

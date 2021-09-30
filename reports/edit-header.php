@@ -1,8 +1,8 @@
 <div class="header p-3">
 
         <div class="name">
-        
-          <h1>Atskaites labošana</h1>
+
+          <h1>Pārskata labošana</h1>
         </div>
 
         <div class="patient-change">

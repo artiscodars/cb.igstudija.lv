@@ -10548,6 +10548,8 @@ table.table-cb thead {
 table.table-cb thead th {
   border: 0;
   padding: 15px;
+  border-bottom: 1px solid #CEE4E8 !important;
+  background: #E7F2F4;
 }
 
 table.table-cb td {
@@ -10647,6 +10649,10 @@ table.dataTable > thead .sorting_desc_disabled:before {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
+}
+
+.saved-reports .dataTables_wrapper > .row:first-child {
+  display: block;
 }
 
 .breadcrumb {

@@ -40,21 +40,10 @@ include 'header.php'; ?>
                   <h3>Datu avots</h3>
                   <div class="row ">
                     <div class="col">
-                      <label class="form-label">Datubāze</label>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>Izvēlies</option>
-                        <option value="1">Automātiskais datu kolektors</option>
-                        <option value="2">Transakcijas</option>
-                      </select>
+                      <i class="fas fa-database"></i> Automātiskais datu kolektors <i class="bi bi-arrow-right"></i> <i class="bi bi-table"></i> Pacienti
+
                     </div>
-                    <div class="col">
-                      <label class="form-label">Tabula</label>
-                      <select class="form-select" aria-label="Default select example">
-                        <option selected>Izvēlies</option>
-                        <option value="1">Pacienti</option>
-                        <option value="2">Ārsti</option>
-                      </select>
-                    </div>
+
                   </div>
 
 
@@ -87,6 +76,8 @@ include 'header.php'; ?>
                               </tr>
                           </thead>
                           <tbody>
+
+                            <!---  atkartojama gabala sakums --->
                               <tr>
                                   <td>
                                     <select class="form-select" aria-label="Default select example">
@@ -105,6 +96,8 @@ include 'header.php'; ?>
                                   <td><input type="email" class="form-control" id="nosaukums" aria-describedby="nosaukums"></td>
                                   <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
                               </tr>
+                            <!---  atkartojama gabala sakums END --->
+
                               <tr>
                                   <td>
                                     <select class="form-select" aria-label="Default select example">
@@ -188,7 +181,7 @@ include 'header.php'; ?>
           <div class="card mb-3 ">
             <div class="card-body">
 
-              <h3 class="mb-3">Atskaites izpilžu plānotājs</h3>
+              <h3 class="mb-3">Pārskata izpilžu plānotājs</h3>
 
               <div class="mb-3">
                 <div class="form-check">
@@ -303,7 +296,7 @@ include 'header.php'; ?>
           <div class="card mb-3 ">
             <div class="card-body">
                 <h3 class="mb-3">Saglabātie pārskati</h3>
-                <table class="table table-hover table-cb" >
+                <table  id="saved-reports"  class="table table-hover table-cb" >
                         <thead>
                             <tr>
                                 <th>Laiks</th>
@@ -313,6 +306,156 @@ include 'header.php'; ?>
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                  2020-08-24011:38
+                                </td>
+                                <td>
+                                  654
+                                </td>
+                                <td>Jānis bērziņš</td>
+                                <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
+                            </tr>
                             <tr>
                                 <td>
                                   2020-08-24011:38
@@ -355,4 +498,4 @@ include 'header.php'; ?>
       </div>
 
 
-  <?php include '../includes/footer.php'; ?>
+  <?php include 'footer.php'; ?>

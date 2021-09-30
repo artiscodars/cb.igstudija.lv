@@ -11,6 +11,8 @@ table.table-cb {
     th {
       border: 0;
       padding: 15px;
+      border-bottom: 1px solid $sea-60 !important;
+      background: $sea-40;
     }
   }
 
