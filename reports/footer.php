@@ -40,9 +40,46 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jszip-2.5.0/dt-1.11.3/af-2.3.7/b-2.0.1/b-colvis-2.0.1/b-html5-2.0.1/b-print-2.0.1/cr-1.5.4/date-1.1.1/fc-4.0.0/fh-3.2.0/r-2.2.9/rg-1.1.3/rr-1.2.8/sc-2.0.5/sb-1.2.2/sp-1.4.0/sl-1.3.3/datatables.min.js"></script>
 
+<!-- Select2 -->
+   <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
 
 
 <script>
+
+function select2( size ) {
+    $( ".form-select" ).each( function () {
+        $( this ).select2( {
+            theme: "bootstrap-5",
+            width: $( this ).data( "width" ) ? $( this ).data( "width" ) : $( this ).hasClass( "w-100" ) ? "100%" : "style",
+            placeholder: $( this ).data( "placeholder" ),
+            allowClear: Boolean( $( this ).data( "allow-clear" ) ),
+            closeOnSelect: !$( this ).attr( "multiple" ),
+            containerCssClass: size == "small" || size == "large" ? "select2--" + size : "",
+            selectionCssClass: size == "small" || size == "large" ? "select2--" + size : "",
+            dropdownCssClass: size == "small" || size == "large" ? "select2--" + size : "",
+        } );
+    } );
+}
+
+select2()
+
+var buttons = document.querySelectorAll(".select2-size")
+
+buttons.forEach( function( button ) {
+    var id = button.id
+    button.addEventListener( "click", function( e ) {
+        e.preventDefault()
+        select2( id )
+        document.querySelectorAll(".select2-size").forEach( function( item ) {
+            item.classList.remove( "active" )
+        } )
+
+        this.classList.add( "active" )
+    } )
+} )
+
+
 
 $(document).ready(function() {
 
@@ -67,7 +104,7 @@ $('#example').DataTable({
     });
 
     $('#dati').DataTable({
-      
+
       buttons: [
             'copyHtml5',
             'excelHtml5',
