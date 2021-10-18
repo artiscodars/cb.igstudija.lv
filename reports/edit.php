@@ -5,7 +5,7 @@ include 'header.php'; ?>
 
       <div class="row g-0">
 
-        <div class="col p-3">
+        <div class="col-12 col-md-8 p-3">
 
 
           <div class="card mb-3">
@@ -66,13 +66,13 @@ include 'header.php'; ?>
 
                     <h3 class="mb-3">Kolonnas</h3>
 
-                  <table class="table table-hover table-cb" >
+                  <table id="db_kolonnas" class="table table-hover table-cb" >
                           <thead>
                               <tr>
-                                  <th>Datu lauks</th>
-                                  <th>Funkcija</th>
-                                  <th>Kolonnas nosaukums</th>
-                                  <th style="width:30px"></th>
+                                  <th class="w-50">Datu lauks</th>
+                                  <th class="w-25">Funkcija</th>
+                                  <th >Kolonnas nosaukums</th>
+                                  <th ></th>
                               </tr>
                           </thead>
                           <tbody>
@@ -80,9 +80,9 @@ include 'header.php'; ?>
                             <!---  atkartojama gabala sakums --->
                               <tr>
                                   <td>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select select2" aria-label="Default select example">
                                       <option selected>ServiceType</option>
-                                      <option value="1">ServiceName</option>
+                                      <option value="1">ServiceName ServiceNameService NameServiceName ServiceNameServiceName</option>
                                       <option value="2">ServiceData</option>
                                     </select>
                                   </td>
@@ -100,7 +100,7 @@ include 'header.php'; ?>
 
                               <tr>
                                   <td>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select select2" aria-label="Default select example">
                                       <option selected>ServiceType</option>
                                       <option value="1">ServiceName</option>
                                       <option value="2">ServiceData</option>
@@ -118,7 +118,7 @@ include 'header.php'; ?>
                               </tr>
                               <tr>
                                   <td>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select select2" aria-label="Default select example">
                                       <option selected>ServiceType</option>
                                       <option value="1">ServiceName</option>
                                       <option value="2">ServiceData</option>
@@ -176,7 +176,7 @@ include 'header.php'; ?>
 
         </div>
 
-        <div class="col-4 p-3">
+        <div class="col-12 col-md-4 p-3">
 
           <div class="card mb-3 ">
             <div class="card-body">
@@ -295,7 +295,15 @@ include 'header.php'; ?>
 
           <div class="card mb-3 ">
             <div class="card-body">
+
+
+
+
                 <h3 class="mb-3">Saglabātie pārskati</h3>
+
+                <input id="searchInput" type="text" class="form-control mb-2" placeholder="Meklēšana">
+
+
                 <table  id="saved-reports"  class="table table-hover table-cb dt-responsive nowrap" >
                         <thead>
                             <tr>
@@ -313,7 +321,7 @@ include 'header.php'; ?>
                                 <td>
                                   654
                                 </td>
-                                <td>Jānis bērziņš</td>
+                                <td>Kārlis bērziņš</td>
                                 <td><a href="#"><i class="far fa-trash-alt"></i></a></td>
                             </tr>
                             <tr>

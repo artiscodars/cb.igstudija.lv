@@ -49,12 +49,17 @@
 
 
 $(document).ready(function() {
+
   $(".select2").select2({
     theme: "bootstrap-5",
-    dropdownParent: $("#exampleModal")
   });
-});
 
+  $(".modal .select2").select2({
+    theme: "bootstrap-5",
+    dropdownParent: $(".modal") //add this line if select2 use in modal
+  });
+
+});
 
 
 $(document).ready(function() {
@@ -67,11 +72,20 @@ $('#example').DataTable({
     ],
    "order": [[1, "asc"]],
     language: {  url: '//cdn.datatables.net/plug-ins/1.11.2/i18n/lv.json' }
-
   });
 
+  //add this if search is outside datatable
+  $("#searchInput").on("input", function (e) {
+     e.preventDefault();
+     $('#saved-reports').DataTable().search($(this).val()).draw();
+  });
 
   $('#saved-reports').DataTable({
+
+      dom:  "<'row'<'d-none'l><'d-none'f>>" +
+            "<'row'<'col'tr>>" +
+            "<'row'<'d-none'i><'col'p>>",
+
     responsive: true,
         columnDefs: [
        { orderable: false, targets: 3 }

@@ -18,7 +18,7 @@ include 'header.php'; ?>
                 <div class="card mb-3">
                   <div class="card-body">
 
-                <select class="form-select" data-placeholder="Saglabātie pārskati" data-allow-clear="1">
+                <select class="form-select select2" data-placeholder="Saglabātie pārskati" data-allow-clear="1">
                                 <option></option>
                                 <option>2020-09-24011:38 :: 6546 :: Jānis Bēziņš</option>
                                 <option>2020-08-24011:38 :: 656 :: Jānis Bēziņš</option>
