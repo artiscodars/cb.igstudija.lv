@@ -236,7 +236,7 @@ include 'header.php'; ?>
                 <div class="col">
 
                   <label class="form-label">Datubāze</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select select2" aria-label="Default select example">
                     <option selected>Izvēlies</option>
                     <option value="1">Automātiskais datu kolektors</option>
                     <option value="2">Transakcijas</option>
@@ -246,7 +246,7 @@ include 'header.php'; ?>
                 <div class="row mb-3">
                 <div class="col">
                   <label class="form-label">Tabula</label>
-                  <select class="form-select" aria-label="Default select example">
+                  <select class="form-select select2" aria-label="Default select example">
                     <option selected>Izvēlies</option>
                     <option value="1">Pacienti</option>
                     <option value="2">Ārsti</option>
