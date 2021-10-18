@@ -60,6 +60,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 $('#example').DataTable({
+  responsive: true,
       columnDefs: [
      { orderable: false, targets: 5 },
       { orderable: false, targets: 0 }
@@ -71,6 +72,7 @@ $('#example').DataTable({
 
 
   $('#saved-reports').DataTable({
+    responsive: true,
         columnDefs: [
        { orderable: false, targets: 3 }
       ],
@@ -80,6 +82,7 @@ $('#example').DataTable({
     });
 
     $('#dati').DataTable({
+      responsive: true,
 
       buttons: [
             'copyHtml5',
