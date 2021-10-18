@@ -254,7 +254,7 @@ include 'header.php'; ?>
                   <div class="mb-3">
 
                   <div class="row mb-3">
-                    <div class="col">
+                    <div class="col-12 col-lg-6">
                       <label class="form-label">Kārtot pēc kolonnas</label>
 
                       <select class="form-select" aria-label="Default select example">
@@ -264,8 +264,8 @@ include 'header.php'; ?>
                         <option value="3">Three</option>
                       </select>
                     </div>
-                    <div class="col">
-                      <option selected>Kārtošanas secība</option>
+                    <div class="col-12 col-lg-6">
+                        <label class="form-label">Kārtošanas secība</label>
                       <select class="form-select" aria-label="Default select example">
                         <option selected>Izvēlies secību</option>
                         <option value="1">Augoši</option>
