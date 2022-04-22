@@ -1,0 +1,71 @@
+// main: style.scss
+
+
+.steps {
+    ul {
+        margin:0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+
+        li {
+            
+            flex-grow: 1 1 auto;
+            width: 33.33333%;
+            a {
+                display: block;
+                height:100%;
+                 text-align: center;
+                padding-right: 7px;
+                padding-left: 7px;
+
+                padding-top: 15px;
+                padding-bottom: 12px;
+                background: $grey-200;
+                color:$sea-100;
+                text-decoration: none;
+                
+                @media(max-width:768px){
+                  font-size: 0.8rem;  
+                }
+                
+                
+                span.num {
+                    display: inline-block;
+                    line-height: 30px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    font-size: 0.8rem;
+                    text-align: center;
+                    background: #fff;
+
+                }
+
+                span.name {
+                    display: block;
+                }
+
+                &.active {
+                    background: $sea-100;
+                    color: #fff;
+
+                    span.num {
+                        color: $sea-100;
+                    }
+                }
+
+                &.done {
+                    background: $sea-40;
+
+                    span.num {
+                        background: $sea-100;
+                        color:#fff;
+                    }
+                }
+            }
+        }
+    }
+}

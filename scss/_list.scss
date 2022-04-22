@@ -1,0 +1,22 @@
+// main: style.scss
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .list-row {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-weight: bold;
+        display: flex;
+        label {
+            flex-grow:0;
+            flex-shrink: 0;
+            width:160px;
+            font-weight: normal;
+        }
+        div {
+            flex-grow:2;
+        }
+    }
+}

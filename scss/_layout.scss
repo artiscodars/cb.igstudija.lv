@@ -1,102 +1,153 @@
 // main: style.scss
 
 body {
-  font-family: $font;
-  background: #fff;
-  height: 100%;
-  padding-top: 120px;
-
-  .subsystem-title {
-    background: $sea-100;
-    color: $white;
-    line-height: 40px;
-    height: 40px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9;
-
-    .title {
-      float: left;
+    font-family: $font;
+    background: #fff;
+    height: 100%;
+    padding-top: 120px;
+    
+    &.auth {
+        padding-top: 60px;
     }
 
-    a.close {
-      color: $white;
-      float: right;
-      display: block;
-      line-height: 40px;
-      height: 40px;
-      width: 40px;
-      text-align: center;
-      text-decoration: none;
-
-      i {
+    .subsystem-title {
+        background: $sea-100;
+        color: $white;
         line-height: 40px;
         height: 40px;
-        width: 40px;
-        display: block;
+        width: 100%;
+        position: fixed;
+         display: flex;        
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+
+        .title {
+             flex: 0 0 auto;
+            text-transform: uppercase;
+        }
+
+        .system-user {
+             flex-grow: 1;
+             text-align: right;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             white-space: nowrap;
+             padding-right: 15px;
+             padding-left: 15px;
+        }
+
+        a.close {
+             flex: 0 0 auto;
+            color: $white;
+
+            display: inline-block;
+            line-height: 40px;
+            height: 40px;
+            padding-left: 15px;
+            
+            text-align: right;
+            text-decoration: none;
+            background: $sea-80;
+
+            i {
+                line-height: 40px;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+
+                &::before {
+                    line-height: 40px;
+                    height: 40px;
+                    width: 40px;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                }
+            }
+            
+            @media (max-width:768px){
+                padding-left: 0;
+                span {
+                    display: none
+                }
+            }
+            
+            
+            
+            
+        }
+    }
+
+    .wrapper {
+        min-height: 100%;
+        padding-bottom: 60px;
+    }
+
+
+
+    h2 {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+
+
+    .validation {
+        padding: 50px;
         text-align: center;
 
-        &::before {
-          line-height: 40px;
-          height: 40px;
-          width: 40px;
-          display: block;
-          text-align: center;
-          text-decoration: none;
+
+        >div {
+            margin-top: 30px;
         }
-      }
+
+
+        @-moz-keyframes spin {
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform:rotate(360deg);
+            }
+        }
+
+
+
+
+
+        i {
+            color:$sea-80;
+            font-size: 50px;
+            -webkit-animation:spin 1s linear infinite;
+            -moz-animation:spin 1s linear infinite;
+            animation:spin 1s linear infinite;
+        }
+
+
+
     }
-  }
-
-  .wrapper {
-    min-height: 100%;
-    padding-bottom: 60px;
-  }
 
 
-
-  h2 {
-    font-size: 1.1rem;
-    font-weight: bold;
-  }
-
-
-
-.validation {
-  padding: 50px;
-  text-align: center;
-
-
- >div {
-   margin-top: 30px;
- }
-
-
-  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-
-
-
-
-  i {
-    color:$sea-80;
-    font-size: 50px;
-    -webkit-animation:spin 1s linear infinite;
-    -moz-animation:spin 1s linear infinite;
-    animation:spin 1s linear infinite;
-  }
-
-
-
-}
-
-
-
+    .left-border {
+        border-left:5px solid $sea-100;
+        
+        @media(max-width:768px){
+             border-left:0;
+             border-top:5px solid $sea-100;
+             margin-top: 20px;
+        }
+        
+    }
 
 
 }

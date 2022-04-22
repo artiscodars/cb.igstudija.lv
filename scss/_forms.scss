@@ -1,1 +1,5 @@
 // main: style.scss
+
+.form-select, input[type=text]{
+    background-color: $form-fields-bg;
+}

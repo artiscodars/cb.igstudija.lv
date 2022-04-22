@@ -1,7 +1,19 @@
 // main: style.scss
 
-.container {
-    margin: unset;
+@media (max-width: 1320px) {
+  .container,
+  .container-sm {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1320px;
+  }
 }
 
 .btn-primary, .btn-success {
@@ -13,6 +25,7 @@
 
 .form-label {
   margin-bottom: .1rem;
+  display: block;
 }
 
 .btn-block {

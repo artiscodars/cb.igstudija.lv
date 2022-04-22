@@ -1,0 +1,20 @@
+// main: style.scss
+
+.gallery {
+    a {
+        display: block;
+        float: left;
+        margin-right: 15px;
+        text-decoration: none;
+        text-align: center;
+        span {
+            display: block;
+        }
+        img {
+            height: 200px;
+            width: auto;
+            margin-bottom: 8px;
+            display: block;
+        }
+    }
+}

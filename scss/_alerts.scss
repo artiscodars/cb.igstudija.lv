@@ -8,6 +8,11 @@
     border: 0;
     border-radius:0;
 
+     &.alert-info {
+        color: $sea-80;//bbb
+        background-color: $sea-40;
+        border-left:10px solid $sea-80;
+    }
 
 
     &.alert-danger {
