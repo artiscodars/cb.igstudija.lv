@@ -9,9 +9,9 @@
     <link href="https://cdn.datatables.net/1.11.2/css/dataTables.bootstrap5.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/dt-1.11.2/b-2.0.0/cr-1.5.4/fc-3.3.3/fh-3.1.9/r-2.2.9/sc-2.0.5/sp-1.4.0/datatables.min.css"/>
 
-    <?php $styletime = date("YmdHi", filemtime($_SERVER["DOCUMENT_ROOT"] . "/style/style.min.css")); ?>
+    <?php $styletime = date("YmdHi", filemtime($_SERVER["DOCUMENT_ROOT"] . "/style/style.css")); ?>
 
-    <link href="/style/style.min.css?v=<?php echo $styletime; ?>" rel="stylesheet">
+    <link href="/style/style.css?v=<?php echo $styletime; ?>" rel="stylesheet">
 
 
 
