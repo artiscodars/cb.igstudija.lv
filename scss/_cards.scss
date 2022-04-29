@@ -4,6 +4,7 @@
 .card {
   border:0;
   border-radius: 0;
+  background: $grey-200;
 
   &.light {
     background: $sea-20;
@@ -144,15 +145,19 @@ color: #000;
 .card-url {
   text-decoration: none;
   display: block;
+  color:#000;
 
   &:hover {
-    opacity: 0.7
+    opacity: 0.7;
+    text-decoration: none;
+  display: block;
+  color:#000;
   }
   .card {
       margin-bottom: 15px;
 
     .code {
-      background: $sea-60;
+      background: #fff;
       display: inline-block;
       padding: 0 5px;
       margin-right: 10px;

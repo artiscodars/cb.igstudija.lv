@@ -1,83 +1,111 @@
 <?php
 $section = "patient-data";
 $subsystem_title = "Pacienta dati";
-include '../includes/header.php'; ?>
+include '../includes/header.php';
+?>
 
 
-      <div class="row g-0">
+<div class="row g-0">
 
-        <div class="col-md-9 p-3">
+    <div class="col-xl-9 p-3">
 
 
-          <div class="alert alert-danger" role="alert">
+        <?php include $_SERVER["DOCUMENT_ROOT"] . '/patient-data/menu.php'; ?>
+
+
+        <div class="alert alert-danger" role="alert">
             A simple danger alert—check it out!
-          </div>
-          <div class="alert alert-warning" role="alert">
+        </div>
+        <div class="alert alert-warning" role="alert">
             A simple warning alert—check it out!
-          </div>
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple warning alert—check it out!
+        </div>
 
 
-<div class="row">
+        <div class="row">
 
-<div class="col">
+            <div class="col-md-6">
 
-  <div class="section">
-  <h4>Alerģijas un nepanesamības <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
-  <?php include 'card-data.php';  ?>
-
-  </div>
-
-  <div class="section">
-  <h4>Medicīniskās ierīces <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
-  <?php include 'card-empty.php';  ?>
-  </div>
-
-  <div class="section">
-  <h4>Lietojamās zāles <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
-  <?php include 'card-data.php';  ?>
-    <?php include 'card-data.php';  ?>
-
-  </div>
+                <div class="section">
+                    <h4><a href="page.php">Alerģijas un nepanesamības (4)</a></h4>
+                    <?php include 'card-data-alergy.php'; ?>
+                    <?php include 'card-data-alergy.php'; ?>
+                    <?php include 'card-data-alergy.php'; ?>
 
 
 
-</div>
-<div class="col">
-
-  <div class="section">
-  <h4>Problēmas un diagnozes <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
-  <?php include 'card-data.php';  ?>
-    <?php include 'card-data.php';  ?>
-
-  </div>
-
-  <div class="section">
-  <h4>Nozīmīgākās ķirurģiskās procedūras pēdējo 6 mēn. laikā <a href="page.php"><i class="fas fa-chevron-right"></i></a></h4>
-  <?php include 'card-no-data.php';  ?>
-  </div>
-
-
-</div>
-
-</div>
+                    <ul class="pagination justify-content-end">
+                        <!--- use from 2nd page
+                      <li class="page-item">
+                        <a class="page-link"><i class="fas fa-chevron-left"></i></a>
+                      </li>
+                        --->
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
 
 
+
+                </div>
+
+
+                <div class="section">
+                    <h4>Medicīniskās ierīces (0)</h4>
+                    <?php include 'card-empty.php'; ?>
+                </div>
+
+                <div class="section">
+                    <h4>Ķirurģiskās iejaukšanās (-)</h4>
+                    <?php include 'card-empty.php'; ?>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-6">
+
+                <div class="section">
+                    <h4><a href="page.php">Diagnozes (2)</a></h4>
+                    <?php include 'card-data-diagnosis.php'; ?>
+                    <?php include 'card-data-diagnosis.php'; ?>
+
+                </div>
+
+                <div class="section">
+                    <h4><a href="page.php">Zāļu kopsavilkums (1)</a></h4>
+                    <?php include 'card-data-drugs.php'; ?>
+                </div>
+
+
+            </div>
 
         </div>
 
 
 
-        <div class="col p-3">
-          <div class="sidebar">
+    </div>
 
-          <?php include '../includes/contactinfo.php'; ?>
 
-          <?php include '../includes/contact-person.php'; ?>
+
+    <div class="col p-3">
+        <div class="sidebar">
+            
+             <?php include '../includes/patient-summary.php'; ?>
+
+            <?php include '../includes/contactinfo.php'; ?>
+
+           
 
         </div>
-        </div>
+    </div>
 
-      </div>
+</div>
 
 
 <?php include '../includes/footer.php'; ?>

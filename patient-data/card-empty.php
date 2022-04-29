@@ -1,7 +1,7 @@
-<div class="card empty">
+<div class="card">
   <div class="card-body">
 
-nav
+Atbilstošs informatīvais teksts
 
 
   </div>

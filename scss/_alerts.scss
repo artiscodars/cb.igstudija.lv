@@ -9,22 +9,22 @@
     border-radius:0;
 
      &.alert-info {
-        color: $sea-80;//bbb
+        color: #000;
         background-color: $sea-40;
         border-left:10px solid $sea-80;
     }
 
 
     &.alert-danger {
-        color: $red;
-        background-color: #FFF6F6;
+        color: #000;
+        background-color: #fee3e3;
         border-left:10px solid $red;
     }
 
 
     &.alert-warning {
-        color: $orange;
-        background-color: #fff6ee;
+        color: #000;
+        background-color: #ffe9d6;
         border-left:10px solid $orange;
     }
 }
