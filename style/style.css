@@ -7309,22 +7309,19 @@ textarea.form-control-lg {
 body {
   font-family: "Roboto", sans-serif;
   background: #fff;
-  height: 100%;
-  padding-top: 120px; }
-  body.auth {
-    padding-top: 60px; }
+  height: 100%; }
   body .subsystem-title {
     background: #236576;
     color: #ffffff;
     line-height: 40px;
     height: 40px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     display: flex;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9; }
+    z-index: 10; }
     body .subsystem-title .title {
       flex: 0 0 auto;
       text-transform: uppercase; }
@@ -7413,6 +7410,9 @@ nav .home {
   align-items: center;
   width: 50px;
   background: #f2f3f2; }
+  nav .home.active {
+    background: #2E8DAC;
+    color: #fff; }
 
 nav button {
   color: #2E8DAC;
@@ -7561,6 +7561,14 @@ nav ul {
 .form-select, input[type=text] {
   background-color: #FFFEF1; }
 
+.minilist-search input {
+  padding-right: 30px;
+  border-radius: 0.15rem !important; }
+
+.minilist-search .btn {
+  margin-left: -30px !important;
+  z-index: 9; }
+
 .card {
   border: 0;
   border-radius: 0;
@@ -7670,22 +7678,21 @@ h3, .h3 {
 
 .header {
   background: #ffffff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80px;
-  position: fixed;
+  padding: 15px;
+  position: sticky;
   top: 40px;
   left: 0;
   right: 0;
-  z-index: 9; }
-  .header > div {
-    align-items: center;
-    justify-content: center;
-    margin-right: 25px; }
+  z-index: 10; }
   .header .name h1, .header .name .h1 {
     margin: 0;
     font-size: 1.5rem; }
+    @media (max-width: 768px) {
+      .header .name h1, .header .name .h1 {
+        font-size: 1.1rem; } }
+  @media (max-width: 768px) {
+    .header .name {
+      padding-bottom: 8px; } }
   .header .gender {
     text-align: center;
     font-size: 0.8rem; }
@@ -7745,13 +7752,16 @@ h3, .h3 {
   .header .blood-type img {
     margin-right: 5px; }
   .header .patient-change {
-    flex-grow: 1;
     text-align: right;
-    justify-content: flex-end;
     margin: 0; }
+    .header .patient-change a {
+      text-decoration: none; }
+      .header .patient-change a i {
+        font-size: 20px;
+        margin-right: 5px; }
 
 footer {
-  background: #ffffff;
+  background: #f2f3f2;
   margin-top: -40px;
   height: 40px;
   line-height: 40px;
@@ -7854,18 +7864,6 @@ footer {
         line-height: 30px;
         text-align: center;
         display: block; }
-  .section .pagination a {
-    padding: 0 7px;
-    line-height: 30px;
-    height: 30px;
-    min-width: 30px;
-    text-align: center;
-    display: block;
-    background: #f2f3f2; }
-    .section .pagination a i {
-      line-height: inherit; }
-  .section .pagination .disabled a {
-    background: #f2f3f2; }
 
 table.table-cb {
   background: #fff;
@@ -7919,6 +7917,22 @@ table.table-cb {
       background: #fff;
       border: 1px solid #CEE4E8;
       font-size: 0.9rem; }
+
+@media only screen and (max-width: 768px) {
+  tr {
+    display: block;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin-bottom: 15px; }
+  thead {
+    display: none; }
+  td, th {
+    display: block; }
+  td[data-th]:before {
+    content: attr(data-th);
+    width: 50%;
+    display: inline-block; } }
 
 .gallery a {
   display: block;
@@ -7982,51 +7996,67 @@ table.dataTable > thead .sorting_desc_disabled:before {
 .breadcrumb {
   margin-bottom: 0; }
 
-.steps ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px; }
-  .steps ul li {
-    flex-grow: 1 1 auto;
-    width: 33.33333%; }
-    .steps ul li a {
-      display: block;
-      height: 100%;
-      text-align: center;
-      padding-right: 7px;
-      padding-left: 7px;
-      padding-top: 15px;
-      padding-bottom: 12px;
-      background: #f2f3f2;
-      color: #236576;
-      text-decoration: none; }
-      @media (max-width: 768px) {
-        .steps ul li a {
-          font-size: 0.8rem; } }
-      .steps ul li a span.num {
-        display: inline-block;
-        line-height: 30px;
-        width: 30px;
-        height: 30px;
-        border-radius: 100%;
-        font-size: 0.8rem;
+.pagination a {
+  padding: 0 7px;
+  line-height: 30px;
+  height: 30px;
+  min-width: 30px;
+  text-align: center;
+  display: block;
+  background: #f2f3f2; }
+  .pagination a i {
+    line-height: inherit; }
+
+.pagination .disabled a {
+  background: #f2f3f2; }
+
+.steps {
+  padding-top: 20px; }
+  .steps ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px; }
+    .steps ul li {
+      flex-grow: 1 1 auto;
+      width: 33.33333%; }
+      .steps ul li a {
+        display: block;
+        height: 100%;
         text-align: center;
-        background: #fff; }
-      .steps ul li a span.name {
-        display: block; }
-      .steps ul li a.active {
-        background: #236576;
-        color: #fff; }
-        .steps ul li a.active span.num {
-          color: #236576; }
-      .steps ul li a.done {
-        background: #E7F2F4; }
-        .steps ul li a.done span.num {
+        padding-right: 7px;
+        padding-left: 7px;
+        padding-top: 15px;
+        padding-bottom: 12px;
+        background: #f2f3f2;
+        color: #236576;
+        text-decoration: none; }
+        @media (max-width: 768px) {
+          .steps ul li a {
+            font-size: 0.8rem; } }
+        .steps ul li a span.num {
+          display: inline-block;
+          line-height: 30px;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          font-size: 0.8rem;
+          text-align: center;
+          background: #fff; }
+        .steps ul li a span.name {
+          display: block; }
+        .steps ul li a.active {
           background: #236576;
           color: #fff; }
+          .steps ul li a.active span.num {
+            color: #236576; }
+        .steps ul li a.done {
+          background: #E7F2F4; }
+          .steps ul li a.done span.num {
+            background: #236576;
+            color: #fff; }
 
 @media (max-width: 1320px) {
   .container,

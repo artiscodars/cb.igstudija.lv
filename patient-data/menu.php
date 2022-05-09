@@ -1,7 +1,7 @@
 
 <nav class="navbar navbar-expand-xl mb-3 d-flex align-items-stretch">
    
-     <a href="/patient-data/" class="home"><span><i class="bi bi-house-door-fill"></i></span></a>
+     <a href="/patient-data/" class="home  <?php if ($subsection == "index") {echo "active";} ?>"><span><i class="bi bi-house-door-fill"></i></span></a>
     
      
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="IZVĒLĒTIES SADAĻU">
@@ -11,10 +11,8 @@
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="menu navbar-nav me-auto">
           
-           
-        
-
-        <li class="main <?php echo $state; ?>">
+     
+        <li class="main <?php if ($subsection == "alergy") {echo "active";} ?>">
             <a href="page.php"><span>Alerģijas un nepanesamības<span>4</span></span></a>
         </li>
         <li class="main">

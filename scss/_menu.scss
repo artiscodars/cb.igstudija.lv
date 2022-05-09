@@ -16,6 +16,11 @@ nav {
         align-items: center;
         width:50px;
         background: $grey-200;
+        
+        &.active {
+             background: $sea-80;
+             color:#fff;
+        }
     }
 
     button {

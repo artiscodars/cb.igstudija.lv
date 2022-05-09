@@ -3,3 +3,16 @@
 .form-select, input[type=text]{
     background-color: $form-fields-bg;
 }
+
+.minilist-search {
+    
+    input {
+        padding-right: 30px;
+        border-radius: 0.15rem !important;
+    }
+    
+    .btn {
+        margin-left: -30px !important;
+        z-index: 9;
+    }
+}

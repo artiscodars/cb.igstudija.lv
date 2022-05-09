@@ -13,10 +13,10 @@ include '../includes/header.php';
                 <a href="/auth/select-country.php" class="done"><span class="num">1</span><span class="name">Valsts izvēle</span></a>
             </li>
             <li>
-                <a href="/auth/select-country.php" class="active"><span class="num">2</span><span class="name">Personas identifikācija</span></a>
+                <a href="/auth/identify-person.php" class="active"><span class="num">2</span><span class="name">Personas identifikācija</span></a>
             </li>
             <li>
-                <a href="/auth/select-country.php"><span class="num">3</span><span class="name">Datu pārbaude</span></a>
+                <a href="/auth/data-validation.php"><span class="num">3</span><span class="name">Datu pārbaude</span></a>
             </li>
         </ul>
     </div>

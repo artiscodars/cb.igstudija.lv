@@ -1,0 +1,26 @@
+// main: style.scss 
+
+
+.pagination {
+      a {
+          padding: 0 7px;
+          line-height: 30px;
+          height: 30px;
+          min-width: 30px;
+          text-align: center;
+          display: block;
+          background: $grey-200;
+          
+          i {
+              line-height: inherit;
+          }
+      }
+      
+      
+      .disabled {
+          a {
+              background: $grey-200;
+          }
+      }
+      
+  }

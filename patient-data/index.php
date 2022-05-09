@@ -1,16 +1,17 @@
 <?php
 $section = "patient-data";
+$subsection = "index";
 $subsystem_title = "Pacienta dati";
 include '../includes/header.php';
 ?>
 
-
-<div class="row g-0">
+ <div class="row g-0">
 
     <div class="col-xl-9 p-3">
 
 
         <?php include $_SERVER["DOCUMENT_ROOT"] . '/patient-data/menu.php'; ?>
+
 
 
         <div class="alert alert-danger" role="alert">
@@ -29,7 +30,17 @@ include '../includes/header.php';
             <div class="col-md-6">
 
                 <div class="section">
-                    <h4><a href="page.php">Alerģijas un nepanesamības (4)</a></h4>
+                    
+                    <div class="row">
+                        <div class="col-md"><h4><a href="page.php">Alerģijas un nepanesamības (4)</a></h4></div>
+                        <div class="col-md-auto text-end">
+                            <div class="input-group mb-2 minilist-search">
+                            <input  class="form-control form-control-sm" type="text" ><button type="" class="btn btn-sm btn-link"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <?php include 'card-data-alergy.php'; ?>
                     <?php include 'card-data-alergy.php'; ?>
                     <?php include 'card-data-alergy.php'; ?>
@@ -71,14 +82,35 @@ include '../includes/header.php';
             <div class="col-md-6">
 
                 <div class="section">
-                    <h4><a href="page.php">Diagnozes (2)</a></h4>
+                    
+                    
+                    <div class="row">
+                        <div class="col-md"><h4><a href="page.php">Diagnozes (2)</a></h4></div>
+                         <div class="col-md-auto text-end">
+                            <div class="input-group mb-2 minilist-search">
+                            <input  class="form-control form-control-sm" type="text" ><button type="" class="btn btn-sm btn-link"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
                     <?php include 'card-data-diagnosis.php'; ?>
                     <?php include 'card-data-diagnosis.php'; ?>
 
                 </div>
 
                 <div class="section">
-                    <h4><a href="page.php">Zāļu kopsavilkums (1)</a></h4>
+                    
+                    <div class="row">
+                        <div class="col-md"> <h4><a href="page.php">Zāļu kopsavilkums (1)</a></h4></div>
+                         <div class="col-md-auto text-end">
+                            <div class="input-group mb-2 minilist-search">
+                            <input  class="form-control form-control-sm" type="text" ><button type="" class="btn btn-sm btn-link"><i class="fas fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
                     <?php include 'card-data-drugs.php'; ?>
                 </div>
 

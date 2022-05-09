@@ -1,133 +1,140 @@
 // main: style.scss
 
 .header {
-  background: $white;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 80px;
-  position: fixed;
-  top: 40px;
-  left: 0;
-  right: 0;
-  z-index: 9;
+    background: $white;
+    padding:15px;
+    position: sticky;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 10;
 
-  > div {
-    align-items: center;
-    //display: flex;
-    justify-content: center;
-    margin-right: 25px;
-  }
 
-  .name {
-    h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-  }
 
-  .gender {
-    text-align: center;
-    font-size: 0.8rem;
+    .name {
+        h1 {
+            margin: 0;
+            font-size: 1.5rem;
 
-    img {
-      display: block;
-      margin: auto;
-    }
-  }
-
-  .age {
-    span {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
-      text-align: center;
-      font-weight: bold;
-      display: block;
-      border: 2px solid $sea-100;
-      border-radius: 5px;
-      margin-right: 5px;
-    }
-  }
-
-  .patient-id {
-    background: $sea-100;
-    color: $white;
-    padding: 1px 7px;
-  }
-
-  .country {
-    img {
-      height: 20px;
-      margin-right: 5px;
-    }
-  }
-
-  .blood-pressure {
-    border: 2px solid $sea-100;
-    border-radius: 5px;
-
-    > div {
-      display: flex;
-    }
-
-    .data {
-      .sys {
-        padding: 0 5px;
-        font-weight: bold;
-
-        &::before {
-          content: "SYS";
-          margin-right: 5px;
-          font-size: 0.8rem;
-          color: $grey-500;
-          font-weight: normal;
+            @media(max-width:768px){
+                font-size: 1.1rem;
+            }
         }
-      }
 
-      .dia {
-        padding: 0 5px;
-        font-weight: bold;
-
-        &::before {
-          content: "DIA";
-          font-size: 0.8rem;
-          margin-right: 5px;
-          color: $grey-500;
-          font-weight: normal;
+        @media(max-width:768px){
+            padding-bottom:8px;
         }
-      }
     }
 
-    .date {
-      display: flex;
-      text-align: center;
-      align-items: center;
-      padding: 5px;
-      background: $sea-80;
-      color: $white;
-      border-radius: 0 3px 3px 0;
+    .gender {
+        text-align: center;
+        font-size: 0.8rem;
+
+        img {
+            display: block;
+            margin: auto;
+        }
     }
-  }
 
-  .pregnancy {
-    img {
-      margin-right: 5px;
+    .age {
+        span {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            font-weight: bold;
+            display: block;
+            border: 2px solid $sea-100;
+            border-radius: 5px;
+            margin-right: 5px;
+        }
     }
-  }
 
-  .blood-type {
-    img {
-      margin-right: 5px;
+    .patient-id {
+        background: $sea-100;
+        color: $white;
+        padding: 1px 7px;
     }
-  }
 
-  .patient-change {
-    flex-grow: 1;
-    text-align: right;
-    justify-content: flex-end;
-    margin: 0;
-  }
+    .country {
+        img {
+            height: 20px;
+            margin-right: 5px;
+        }
+    }
 
-  &.patient-header {}
+    .blood-pressure {
+        border: 2px solid $sea-100;
+        border-radius: 5px;
+
+        > div {
+            display: flex;
+        }
+
+        .data {
+            .sys {
+                padding: 0 5px;
+                font-weight: bold;
+
+                &::before {
+                    content: "SYS";
+                    margin-right: 5px;
+                    font-size: 0.8rem;
+                    color: $grey-500;
+                    font-weight: normal;
+                }
+            }
+
+            .dia {
+                padding: 0 5px;
+                font-weight: bold;
+
+                &::before {
+                    content: "DIA";
+                    font-size: 0.8rem;
+                    margin-right: 5px;
+                    color: $grey-500;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        .date {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            padding: 5px;
+            background: $sea-80;
+            color: $white;
+            border-radius: 0 3px 3px 0;
+        }
+    }
+
+    .pregnancy {
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .blood-type {
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    .patient-change {
+
+        a {
+            text-decoration: none;
+            i {
+                font-size: 20px;
+                margin-right: 5px;
+            }
+        }
+        text-align: right;
+        margin: 0;
+
+    }
+
+
 }

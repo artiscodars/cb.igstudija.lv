@@ -76,8 +76,8 @@ include '../includes/header.php';
 
 
             <a href="/auth/identify-person.php" class="btn btn-outline-primary mt-3">Atpakaļ</a>
-            <a href="/auth/loading.php" class="btn btn-primary mt-3 disabled">Pacienta pamatdati</a>
-            <a href="/recipes/" class="btn btn-primary mt-3">Receptes</a>
+            <a href="/patient-data/" class="btn btn-primary mt-3 ">Pacienta pamatdati</a><?php /*add class "disabled" when cbox not selected disabled */ ?>
+            <a href="/recipes/" class="btn btn-primary mt-3">Receptes</a><?php /*add class "disabled" when cbox not selected disabled */ ?>
 
         </div>
 
