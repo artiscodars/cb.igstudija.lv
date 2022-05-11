@@ -7,7 +7,7 @@ include '../includes/header.php';
 <div class="container">
 
 
-    <div class="steps">
+    <div class="steps mb-3 mt-3">
         <ul>
             <li>
                 <a href="/auth/select-country.php" class="active"><span class="num">1</span><span class="name">Valsts izvēle</span></a>

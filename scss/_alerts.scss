@@ -27,4 +27,10 @@
         background-color: #ffe9d6;
         border-left:10px solid $orange;
     }
+    
+    &.alert-success {
+        color: #000;
+        background-color: #ECF3D2;
+        border-left:10px solid $green;
+    }
 }

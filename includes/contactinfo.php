@@ -1,4 +1,57 @@
 <div class="accordion" id="accordionExample">
+
+
+
+
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="heading-patient">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#patient" aria-expanded="true" aria-controls="patient">
+                Pacients
+            </button>
+        </h2>
+        <div id="patient" class="accordion-collapse collapse show" aria-labelledby="heading-patient" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+
+
+
+                <div class="row  d-flex align-items-center">
+                    <div class="col">
+                       Dzimšanas datums:
+                    </div>
+                    <div class="col">
+                        12.03.1997.  (24 gadi)
+                    </div>
+                </div>
+                
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                      Dzimums:
+                    </div>
+                    <div class="col">
+                       sieviete
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -26,46 +79,7 @@
     </div>
 
 
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                ĀRSTNIECĪBAS PERSONA
-            </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-                <h3>Anna Dreisk</h3>
-
-                <div class="c-list">
-                    <i class="fas fa-envelope"></i> <a href="#">anna.dreisk@meoclinik.de</a>
-                </div>
-
-                <div class="c-list">
-                    <i class="fas fa-phone-alt"></i> <a href="#">+49 98564578</a>
-                </div> 
-
-
-            </div>
-        </div>
-    </div>
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                ATBILDĪGĀ ORGANIZĀCIJA
-            </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-
-
-
-
-
-
-            </div>
-        </div>
-    </div>
+ 
 
 
 </div>

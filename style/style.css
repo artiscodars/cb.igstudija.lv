@@ -50,6 +50,9 @@
   background: #F5FAFA !important;
   color: #000000; }
 
+.red {
+  color: red; }
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7558,8 +7561,10 @@ nav ul {
 .loader-info {
   color: #236576; }
 
-.form-select, input[type=text] {
+.form-select, input[type=text], input[type=number] {
   background-color: #FFFEF1; }
+  .form-select.form-control-plaintext, input[type=text].form-control-plaintext, input[type=number].form-control-plaintext {
+    background-color: transparent; }
 
 .minilist-search input {
   padding-right: 30px;
@@ -7568,113 +7573,6 @@ nav ul {
 .minilist-search .btn {
   margin-left: -30px !important;
   z-index: 9; }
-
-.card {
-  border: 0;
-  border-radius: 0;
-  background: #f2f3f2; }
-  .card.light {
-    background: #F5FAFA; }
-  .card.contactinfo {
-    margin-bottom: 20px; }
-    .card.contactinfo .card-body > div {
-      padding-left: 25px;
-      position: relative;
-      margin-bottom: 10px; }
-      .card.contactinfo .card-body > div:last-child {
-        margin-bottom: 0; }
-      .card.contactinfo .card-body > div i {
-        position: absolute;
-        left: 0;
-        top: 5px;
-        color: #2E8DAC; }
-    .card.contactinfo .card-body h3, .card.contactinfo .card-body .h3 {
-      font-size: 1rem; }
-  .card.empty {
-    text-align: center;
-    border: 2px dashed #2E8DAC;
-    opacity: 0.5; }
-  .card.no-data {
-    text-align: center;
-    border: 2px dashed #fd7e14;
-    color: #fd7e14; }
-  .card .form-data {
-    font-weight: bold; }
-    .card .form-data label {
-      display: block;
-      margin-top: 15px;
-      font-weight: normal; }
-
-.listitem {
-  text-decoration: none; }
-  .listitem:hover .card {
-    background: #F5FAFA; }
-
-.recipe-id {
-  padding: 1px 5px;
-  background: #CEE4E8;
-  margin-right: 20px;
-  color: #000; }
-
-.recipe-dates {
-  color: #000; }
-  .recipe-dates i {
-    color: #2E8DAC; }
-
-h3, .h3 {
-  font-size: 1.2rem;
-  color: #000; }
-  h3 span, .h3 span {
-    font-weight: normal; }
-
-.recipe-prescribers {
-  color: #000; }
-
-.content h4, .content .h4 {
-  font-weight: normal;
-  font-size: 1rem;
-  text-transform: uppercase; }
-
-.content .card {
-  margin-bottom: 1rem; }
-  .content .card.recipe {
-    border-top: 10px solid #73CCEA; }
-  .content .card .card-row {
-    margin-bottom: 1rem; }
-    .content .card .card-row:last-child {
-      margin-bottom: 0; }
-    .content .card .card-row label {
-      font-size: 0.9rem;
-      color: #9e9e9e; }
-
-.card-url {
-  text-decoration: none;
-  display: block;
-  color: #000; }
-  .card-url:hover {
-    opacity: 0.7;
-    text-decoration: none;
-    display: block;
-    color: #000; }
-  .card-url .card {
-    margin-bottom: 15px; }
-    .card-url .card .code {
-      background: #fff;
-      display: inline-block;
-      padding: 0 5px;
-      margin-right: 10px;
-      color: #000; }
-    .card-url .card .date {
-      color: #000;
-      display: inline-block;
-      padding: 0 5px;
-      margin-right: 10px; }
-    .card-url .card .title {
-      font-weight: bold;
-      padding-top: 5px;
-      color: #000; }
-  .card-url:last-child .card {
-    margin-bottom: 0; }
 
 .header {
   background: #ffffff;
@@ -7797,12 +7695,15 @@ footer {
     color: #000;
     background-color: #ffe9d6;
     border-left: 10px solid #fd7e14; }
+  .alert.alert-success {
+    color: #000;
+    background-color: #ECF3D2;
+    border-left: 10px solid #91B719; }
 
 .accordion .accordion-item {
   background-color: #f2f3f2;
   border: 0;
-  border-radius: 0;
-  margin-bottom: 15px; }
+  border-radius: 0; }
   .accordion .accordion-item .params {
     border-top: 15px solid #fff;
     margin-top: 15px;
@@ -7836,7 +7737,10 @@ footer {
   text-transform: uppercase;
   font-weight: 500; }
   .accordion .accordion-button:not(.collapsed) {
-    background-color: #f2f3f2; }
+    background-color: #f2f3f2;
+    color: #2E8DAC; }
+  .accordion .accordion-button.collapsed {
+    color: #2E8DAC; }
 
 .accordion .c-list {
   padding-left: 23px;
@@ -8010,53 +7914,177 @@ table.dataTable > thead .sorting_desc_disabled:before {
 .pagination .disabled a {
   background: #f2f3f2; }
 
-.steps {
-  padding-top: 20px; }
-  .steps ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px; }
-    .steps ul li {
-      flex-grow: 1 1 auto;
-      width: 33.33333%; }
-      .steps ul li a {
-        display: block;
-        height: 100%;
+.steps ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px; }
+  .steps ul li {
+    flex-grow: 1 1 auto;
+    width: 33.33333%; }
+    .steps ul li a {
+      display: block;
+      height: 100%;
+      text-align: center;
+      padding-right: 7px;
+      padding-left: 7px;
+      padding-top: 15px;
+      padding-bottom: 12px;
+      background: #f2f3f2;
+      color: #236576;
+      text-decoration: none; }
+      @media (max-width: 768px) {
+        .steps ul li a {
+          font-size: 0.8rem; } }
+      .steps ul li a span.num {
+        display: inline-block;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        font-size: 0.8rem;
         text-align: center;
-        padding-right: 7px;
-        padding-left: 7px;
-        padding-top: 15px;
-        padding-bottom: 12px;
-        background: #f2f3f2;
-        color: #236576;
-        text-decoration: none; }
-        @media (max-width: 768px) {
-          .steps ul li a {
-            font-size: 0.8rem; } }
-        .steps ul li a span.num {
-          display: inline-block;
-          line-height: 30px;
-          width: 30px;
-          height: 30px;
-          border-radius: 100%;
-          font-size: 0.8rem;
-          text-align: center;
-          background: #fff; }
-        .steps ul li a span.name {
-          display: block; }
-        .steps ul li a.active {
+        background: #fff; }
+      .steps ul li a span.name {
+        display: block; }
+      .steps ul li a.active {
+        background: #236576;
+        color: #fff; }
+        .steps ul li a.active span.num {
+          color: #236576; }
+      .steps ul li a.done {
+        background: #E7F2F4; }
+        .steps ul li a.done span.num {
           background: #236576;
           color: #fff; }
-          .steps ul li a.active span.num {
-            color: #236576; }
-        .steps ul li a.done {
-          background: #E7F2F4; }
-          .steps ul li a.done span.num {
-            background: #236576;
-            color: #fff; }
+
+.card {
+  border: 0;
+  border-radius: 0;
+  background: #f2f3f2; }
+  .card.light {
+    background: #F5FAFA; }
+  .card.contactinfo {
+    margin-bottom: 20px; }
+    .card.contactinfo .card-body > div {
+      padding-left: 25px;
+      position: relative;
+      margin-bottom: 10px; }
+      .card.contactinfo .card-body > div:last-child {
+        margin-bottom: 0; }
+      .card.contactinfo .card-body > div i {
+        position: absolute;
+        left: 0;
+        top: 5px;
+        color: #2E8DAC; }
+    .card.contactinfo .card-body h3, .card.contactinfo .card-body .h3 {
+      font-size: 1rem; }
+  .card.empty {
+    text-align: center;
+    border: 2px dashed #2E8DAC;
+    opacity: 0.5; }
+  .card.no-data {
+    text-align: center;
+    border: 2px dashed #fd7e14;
+    color: #fd7e14; }
+  .card .form-data {
+    font-weight: bold; }
+    .card .form-data label {
+      display: block;
+      margin-top: 15px;
+      font-weight: normal; }
+
+.listitem {
+  text-decoration: none;
+  color: #000; }
+  .listitem:hover {
+    color: #000;
+    text-decoration: none;
+    -webkit-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.15);
+    transform: translate(-3px, -3px);
+    display: block; }
+  .listitem h3, .listitem .h3 {
+    text-decoration: underline;
+    color: #2E8DAC; }
+
+.recipe-id {
+  padding: 1px 5px;
+  background: #CEE4E8;
+  color: #000;
+  font-weight: 400;
+  display: inline-block; }
+
+.recipe-dates {
+  color: #000; }
+
+h3, .h3 {
+  font-size: 1.2rem;
+  color: #000; }
+  h3 span, .h3 span {
+    font-weight: normal; }
+
+.recipe-prescribers {
+  color: #000; }
+
+.content h4, .content .h4 {
+  font-size: 1rem;
+  text-transform: uppercase; }
+
+.content .card-row {
+  margin-bottom: 1rem; }
+  .content .card-row:last-child {
+    margin-bottom: 0; }
+  .content .card-row label {
+    font-size: 0.8rem; }
+  .content .card-row .card-data {
+    font-weight: 600; }
+
+.card {
+  margin-bottom: 1rem; }
+  .card.recipe {
+    border-top: 10px solid #73CCEA; }
+  .card .accordion-button {
+    padding: 0;
+    box-shadow: none;
+    text-transform: none; }
+  .card .accordion-body {
+    padding: 0; }
+  .card table {
+    background: #fff;
+    font-size: 0.9rem; }
+
+.card-url {
+  text-decoration: none;
+  display: block;
+  color: #000; }
+  .card-url:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    display: block;
+    color: #000; }
+  .card-url .card {
+    margin-bottom: 15px; }
+    .card-url .card .code {
+      background: #fff;
+      display: inline-block;
+      padding: 0 5px;
+      margin-right: 10px;
+      color: #000; }
+    .card-url .card .date {
+      color: #000;
+      display: inline-block;
+      padding: 0 5px;
+      margin-right: 10px; }
+    .card-url .card .title {
+      font-weight: bold;
+      padding-top: 5px;
+      color: #000; }
+  .card-url:last-child .card {
+    margin-bottom: 0; }
 
 @media (max-width: 1320px) {
   .container,

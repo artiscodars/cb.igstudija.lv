@@ -7,7 +7,7 @@ include '../includes/header.php';
 <div class="container">
 
 
-    <div class="steps">
+    <div class="steps mb-3 mt-3">
         <ul>
             <li>
                 <a href="/auth/select-country.php" class="done"><span class="num">1</span><span class="name">Valsts izvēle</span></a>
@@ -49,6 +49,15 @@ include '../includes/header.php';
 
     </div>
 </div>
-</div>
+
+ <script>
+
+        setTimeout(function () {
+            window.location.href = '/auth/data-validation.php'; // the redirect goes here
+
+        }, 3000); // 3 seconds
+
+    </script>
+
 
 <?php include '../includes/footer.php'; ?>

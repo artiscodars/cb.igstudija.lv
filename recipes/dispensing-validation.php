@@ -1,42 +1,37 @@
+<div class="steps">
+    <ul>
+        <li>
+            <a href="/auth/select-country.php" class="done"><span class="num">1</span><span class="name">Medikamenta izvēle</span></a>
+        </li>
+        <li>
+            <a href="/auth/select-country.php" class="active"><span class="num">2</span><span class="name">Priekšskatīt</span></a>
+        </li>
+        <li>
+            <a href="/auth/select-country.php" class=""><span class="num">3</span><span class="name">Izsniegšana</span></a>
+        </li>
+    </ul>
+</div>
 
 
-<div class="card light">
-  <div class="card-body">
 
 
     <div class="validation">
         <i class="fas fa-sync"></i>
           <div>
-          Datu pieprasīšana
+              Lūdzu, uzgaidiet – notiek zāļu izsniegšanas reģistrācija <b>Vācijas</b> e-veselības sistēmā, kas var aizņemt ilgāku laiku. 
+          <br> <br>
+Pēc reģistrācijas sistēma parādīs paziņojumu no <b>Vācijas</b> e-veselības sistēmas un Jūs drīkstēsiet personai izsniegt zāles.
           </div>
     </div>
 
-    <form>
+   
 
-      <div class="row mt-3">
-
-        <div class="col text-center">
-          <a type="submit" href="?p=" class="btn btn-primary">Atcelt</a>
-        </div>
-
-      </div>
-
-
-    </form>
-
-
-
-
-
-
-  </div>
-</div>
 
 
 <script>
 
 setTimeout(function () {
-   window.location.href= '?p=confirmed'; // the redirect goes here
+   window.location.href= '/recipes/recipe-summary.php'; // the redirect goes here
 
 },3000); // 3 seconds
 

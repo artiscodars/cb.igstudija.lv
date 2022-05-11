@@ -1,7 +1,10 @@
 // main: style.scss
 
-.form-select, input[type=text]{
+.form-select, input[type=text], input[type=number]{
     background-color: $form-fields-bg;
+    &.form-control-plaintext {
+        background-color: transparent;
+    }
 }
 
 .minilist-search {

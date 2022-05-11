@@ -9,7 +9,7 @@
         background-color: $grey-200;
         border:0;
     border-radius: 0;
-        margin-bottom: 15px;
+       
         
         
         .params {
@@ -66,6 +66,10 @@
         font-weight: 500;
         &:not(.collapsed) {
             background-color: $grey-200;
+            color:$sea-80;
+        }
+        &.collapsed {
+            color:$sea-80;
         }
     }
     

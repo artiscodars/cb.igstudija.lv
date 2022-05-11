@@ -69,26 +69,35 @@
 //Recipes list
 
 .listitem {
-  text-decoration: none;
+  text-decoration: none;//kkkk
+  color:#000;
 &:hover {
-  .card {
-    background: $sea-20;
-
-  }
+    color:#000;
+    text-decoration: none;
+-webkit-box-shadow: 3px 3px 10px 1px  rgba(0,0,0,0.15);
+-moz-box-shadow: 3px 3px 10px 1px  rgba(0,0,0,0.15);
+box-shadow: 3px 3px 10px 1px  rgba(0,0,0,0.15);
+transform: translate(-3px,-3px);
+    display: block;
 }
+
+h3 {
+    text-decoration: underline;
+    color:$sea-80;
+}
+
+
 }
 
 .recipe-id {
   padding: 1px 5px;
   background: $sea-60;
-  margin-right: 20px;
   color: #000;
+  font-weight: 400;
+  display: inline-block;
 }
 .recipe-dates {
   color:#000;
-  i {
-    color: $sea-80;
-  }
 }
 
 h3 {
@@ -110,17 +119,12 @@ color: #000;
 
 .content {
   h4 {
-    font-weight: normal;
     font-size: 1rem;
     text-transform: uppercase;
   }
 
-.card {
-  margin-bottom: 1rem;
 
-  &.recipe {
-    border-top:10px solid #73CCEA;
-  }
+
 
 .card-row {
   margin-bottom: 1rem;
@@ -130,14 +134,41 @@ color: #000;
 }
 
   label {
-    font-size: 0.9rem;
-    color:$grey-400;
+    font-size: 0.8rem; 
   }
+  
+  .card-data {
+      font-weight: 600;
+  }
+  
+  
+}
+
 }
 
 
-}
+.card {
+    
+     margin-bottom: 1rem;
 
+  &.recipe {
+    border-top:10px solid #73CCEA;
+  }
+  
+    .accordion-button {
+      padding: 0;
+      box-shadow: none;
+      text-transform: none;
+  }
+  
+  .accordion-body {
+       padding: 0;
+  }
+  
+  table {
+      background: #fff;
+      font-size: 0.9rem;
+  }
 }
 
 
