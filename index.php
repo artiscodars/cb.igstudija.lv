@@ -1,5 +1,5 @@
 <?php
-$subsystem_title = "Pacienta identifikācija";
+$subsystem_title = "Crossborder projekta sagataves";
 
 
 include 'includes/header.php'; ?>

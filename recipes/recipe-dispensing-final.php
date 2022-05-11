@@ -8,13 +8,13 @@ include '../includes/header.php';
     <div class="steps mt-3">
         <ul>
             <li>
-                <a href="/auth/select-country.php" class="done"><span class="num">1</span><span class="name">Medikamenta izvēle</span></a>
+                <a href="#" class="done"><span class="num">1</span><span class="name">Medikamenta izvēle</span></a>
             </li>
             <li>
-                <a href="/auth/select-country.php" class="done"><span class="num">2</span><span class="name">Priekšskatīt</span></a>
+                <a href="#" class="done"><span class="num">2</span><span class="name">Priekšskatīt</span></a>
             </li>
             <li>
-                <a href="/auth/select-country.php" class="active"><span class="num">3</span><span class="name">Izsniegšana</span></a>
+                <a href="#" class="active"><span class="num">3</span><span class="name">Izsniegšana</span></a>
             </li>
         </ul>
     </div>
