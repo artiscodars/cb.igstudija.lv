@@ -140,7 +140,7 @@ include '../includes/header.php';
 
         <?php include '../includes/patient-summary.php'; ?>
 
-        <?php include '../includes/contactinfo.php'; ?>
+     
 
 
 
