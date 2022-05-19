@@ -7785,12 +7785,14 @@ table.table-cb {
     line-height: 28px;
     font-size: 0.9rem;
     vertical-align: middle; }
-    table.table-cb td.kods span {
-      background: #CEE4E8;
-      padding: 0 5px;
-      margin-right: 10px;
-      color: #000;
-      font-size: 0.9rem; }
+    table.table-cb td span {
+      line-height: normal; }
+      table.table-cb td span.code {
+        background: #CEE4E8;
+        padding: 0 5px;
+        margin-right: 10px;
+        color: #000;
+        font-size: 0.9rem; }
     table.table-cb td .btn i {
       margin-left: 5px; }
     table.table-cb td .btn .close {
@@ -7822,21 +7824,27 @@ table.table-cb {
       border: 1px solid #CEE4E8;
       font-size: 0.9rem; }
 
-@media only screen and (max-width: 768px) {
-  tr {
+@media (max-width: 768px) {
+  table.table-cb tr {
     display: block;
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
     border-top: 1px solid #cccccc;
     margin-bottom: 15px; }
-  thead {
+  table.table-cb thead {
     display: none; }
-  td, th {
-    display: block; }
-  td[data-th]:before {
+  table.table-cb td, table.table-cb th {
+    display: block;
+    padding: 7px 15px;
+    position: relative; }
+  table.table-cb td[data-th]:before {
     content: attr(data-th);
     width: 50%;
-    display: inline-block; } }
+    display: block;
+    line-height: normal;
+    font-size: 11px;
+    margin-bottom: 5px;
+    font-style: italic; } }
 
 .gallery a {
   display: block;

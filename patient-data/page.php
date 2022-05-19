@@ -31,7 +31,7 @@ include '../includes/header.php';
 
         <div class="row">
             <div class="col"></div>
-            <div class="col-auto text-end">
+            <div class="col-md-auto text-end">
                 <div class="input-group mb-2 minilist-search">
                     <input  class="form-control form-control-sm" type="text" ><button type="" class="btn btn-sm btn-link"><i class="fas fa-search"></i></button>
                 </div>
@@ -52,10 +52,10 @@ include '../includes/header.php';
             <tbody>
                 <!--- row --->
                 <tr>
-                    <td class="kods" data-th="Alerģijas tipa kods"><span>4675</span></td>
-                    <td  data-th="Nosaukums"><b>Pārtikas alerģija</b></td>
-                    <td class="kods"  data-th="Alergēna kods"><span>A73</span></td>
-                    <td  data-th="Alergēna nosaukums">Kivi</td>
+                    <td data-th="Alerģijas tipa kods"><span class="code">4675</span></td>
+                    <td  data-th="Nosaukums"><span><b>Pārtikas alerģija</b></span></td>
+                    <td data-th="Alergēna kods"><span class="code">A73</span></td>
+                    <td  data-th="Alergēna nosaukums"><span>Kivi</span></td>
                     <td  data-th="Reakcijas"><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_1" role="button" aria-expanded="false" aria-controls="link_1">
                             <span class="open">Parādīt</span><span class="close">Aizvērt</span>
                             <i class="far fa-caret-square-down"></i></a></td>
@@ -67,10 +67,10 @@ include '../includes/header.php';
 
                 <!--- row --->
                 <tr>
-                    <td class="kods" data-th="Alerģijas tipa kods"><span>3333</span></td>
-                    <td data-th="Nosaukums"><b>Medikamentu alerģija</b></td>
-                    <td class="kods" data-th="Alergēna kods"><span>B13</span></td>
-                    <td data-th="Alergēna nosaukums">Paracetamols</td>
+                    <td data-th="Alerģijas tipa kods"><span>3333</span></td>
+                    <td data-th="Nosaukums"><span><b>Medikamentu alerģija</b></span></td>
+                    <td data-th="Alergēna kods"><span>B13</span></td>
+                    <td data-th="Alergēna nosaukums"><span>Paracetamols</span></td>
                     <td data-th="Reakcijas"><a class="btn btn-primary btn-sm" data-bs-toggle="collapse" href="#link_2" role="button" aria-expanded="false" aria-controls="link_2">
                             <span class="open">Parādīt</span><span class="close">Aizvērt</span>
                             <i class="far fa-caret-square-down"></i></a></td>
@@ -84,16 +84,16 @@ include '../includes/header.php';
                 <!--- row --->
                 <tr>
                     <td class="kods" data-th="Alerģijas tipa kods"><span>3333</span></td>
-                    <td data-th="Nosaukums">
+                    <td data-th="Nosaukums"><span>
                         <b>Triveram 40 mg/10 mg/10 mg film-coated tablets</b>
                         <ul>
                             <li>Amlodipinum 10 mg</li>
                             <li>Atorvastatinum 40 mg</li>
                             <li>Perindoprili argininum 10 mg</li>
                         </ul>
-                    </td>
+                    </span></td>
                     <td class="kods" data-th="Alergēna kods"><span>B13</span></td>
-                    <td data-th="Alergēna nosaukums">Paracetamols</td>
+                    <td data-th="Alergēna nosaukums"><span>Paracetamols</span></td>
                     <td data-th="Reakcijas"></td>
                 </tr>
 

@@ -1,5 +1,5 @@
 <div class="title">Reakcijas ko izraisa alergēns</div>
-<table class="table table-hover table-nested">
+<table class="table table-hover table-cb">
   <thead>
     <tr>
 
@@ -11,10 +11,10 @@
   </thead>
   <tbody>
     <tr>
-      <td class="kods"><span>53</span></td>
-      <td>Izsitumi</td>
-      <td>Viegli</td>
-      <td>Kontrolēti</td>
+      <td data-th="Kods"><span class="code">53</span></td>
+      <td data-th="Nosaukums"><span>Izsitumi</span></td>
+      <td data-th="Pakāpe"><span>Viegli</span></td>
+      <td data-th="Kontrole"><span>Kontrolēti</span></td>
     </tr>
     <tr>
       <td class="kods"><span>37</span></td>

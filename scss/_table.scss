@@ -21,9 +21,10 @@ table.table-cb {
     line-height: 28px;
     font-size: 0.9rem;
     vertical-align: middle;
-
-    &.kods {
-      span {
+    
+    span {
+        line-height: normal;
+        &.code {
         background: $sea-60;
         padding: 0 5px;
         margin-right: 10px;
@@ -31,6 +32,8 @@ table.table-cb {
         font-size: 0.9rem;
       }
     }
+
+   
 
     .btn {
       i {
@@ -97,9 +100,10 @@ table.table-cb {
 }
 
 
-@media only screen and (max-width: 768px) {
+@media(max-width: 768px) {
     
-    tr {
+    table.table-cb {
+       tr {
         display: block;
         border-left:1px solid $grey-300;
         border-right:1px solid $grey-300;
@@ -112,11 +116,19 @@ table.table-cb {
 
     td, th {
         display: block;
+        padding: 7px 15px; 
+        position: relative; //nnnnnnnnnnnnnnnn
     }
 
     td[data-th]:before  {
         content: attr(data-th);
         width:50%;
-        display: inline-block;
+        display: block;
+        line-height: normal;
+        font-size: 11px;
+        margin-bottom: 5px;
+        font-style: italic;
     }
+    }
+    
 }

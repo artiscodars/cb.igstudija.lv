@@ -6,18 +6,18 @@
         <li>
             <a href="#" class=""><span class="num">2</span><span class="name">Priekšskatīt</span></a>
         </li>
-         <li>
+        <li>
             <a href="#" class=""><span class="num">3</span><span class="name">Izsniegšana</span></a>
         </li>
     </ul>
 </div>
 
-<?php if($_GET['p']=='canceled'){ ?>
+<?php if ($_GET['p'] == 'canceled') { ?>
 
-<div class="alert alert-danger alert-dismissible fade show" role="alert">
-  Reģistrācija atcelta
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        Reģistrācija atcelta
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
 
 <?php } ?>
 
@@ -33,21 +33,24 @@
 
 
 
-        <form class="m-0">
+        <div class="m-0">
 
             <label for="field-1" class="form-label">Izsniedzamie medikamenti</label> 
             <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="btn btn-primary" >Izvēlēties</button>
+                <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2" >
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#med-table" >Izvēlēties</button>
             </div>
 
 
+            <?php include 'medicine-list.php'; //modal?>
+
+           
             <div class="row mb-3">
-                <div class="col">
+                <div class="col-md">
                     <label for="field-1" class="form-label">Iepakojumus skaits</label>
                     <input type="number" class="form-control" id="field-1" value="1">
                 </div>
-                <div class="col">
+                <div class="col pt-3 pt-md-0">
                     <label for="field-2" class="form-label">Kopējais izsniedzamais daudzums</label>
                     <input type="text" readonly class="form-control-plaintext" id="field-2" value="30">
                 </div>
@@ -79,7 +82,7 @@
             </div>
 
 
-        </form>
+        </div>
 
 
 
